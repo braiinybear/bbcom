@@ -1,6 +1,6 @@
 const categories = [
     "IT Courses",
-    "Finance",
+    "Marketing",
     "Web Development",
     "Communication",
     "Business Analytics & Intelligence",

@@ -1,5 +1,25 @@
 // data/courses.ts
 import { Course } from "../types";
+import ai from "../assets/it-courses/AI.jpg"
+import blockchain from "../assets/it-courses/blockchain.jpg"
+import cloud from "../assets/it-courses/cloud.jpg"
+import cyber from "../assets/it-courses/cyber.jpg"
+import devops from "../assets/it-courses/devops.jpg"
+import iot from "../assets/it-courses/iot.jpg"
+import soft from "../assets/it-courses/soft-testing.jpg"
+import uiux from "../assets/it-courses/uiux.jpg"
+import data from "../assets/it-courses/data.jpg"
+// marketing 
+import salesMarketingImage from "../assets/marketing/Sales-Marketing.jpg"
+import digitalMarketingImage from "../assets/marketing/Digital-Marketing.jpg"
+import productMarketingImage from "../assets/marketing/Product-Marketing.jpg"
+import eventMarketingImage from "../assets/marketing/Event-Marketing.jpg"
+import growthMarketingImage from "../assets/marketing/Growth-Marketing.jpg"
+import socialMediaMarketingImage from "../assets/marketing/Social-Media.jpg"
+import salesforceCertificationImage from "../assets/marketing/Sales-Development.jpg"
+import dataDrivenMarketingImage from "../assets/marketing/Advanced-Analytics.jpg"
+import influencerMarketingImage from "../assets/marketing/Influencer-Marketing.jpg"
+import marketingManagementImage from "../assets/marketing/Marketing-Management.jpg"
 
 export const courses: Course[] = [
   {
@@ -8,7 +28,7 @@ export const courses: Course[] = [
     category: "IT Courses",
     description:
       "A complete guide to AI & ML including deep learning, NLP, and hands-on projects.",
-    image: "/images/ai-ml.jpg",
+    image: ai,
     duration: "12 weeks",
     whatYouWillLearn: [
       "Understand the fundamentals of AI & ML",
@@ -111,7 +131,7 @@ export const courses: Course[] = [
     id: "cybersecurity",
   category: "IT Courses",
   title: "Cybersecurity: Protecting Digital Assets & Ethical Hacking",
-  image: "/images/courses/cybersecurity.jpg",
+  image: cyber,
   duration: "12 Weeks", 
   description:
       "Learn to secure digital systems, prevent cyber attacks, and explore ethical hacking techniques. Ideal for IT professionals, entrepreneurs, and security enthusiasts.",
@@ -239,7 +259,7 @@ export const courses: Course[] = [
     category: "IT Courses",
     description:
       "Master the fundamentals of cloud computing including core services, security, DevOps, and real-world implementation across AWS, Azure, and GCP.",
-      image: "/images/courses/cloud-computing.jpg",
+      image: cloud,
       duration: "45h 00m",
     whatYouWillLearn: [
       "Understand cloud service and deployment models (IaaS, PaaS, SaaS)",
@@ -367,7 +387,7 @@ export const courses: Course[] = [
     category: "IT Courses",
     description:
       "Master data analysis, machine learning, big data, and business intelligence with hands-on tools like Python, R, SQL, and cloud platforms.",
-    image: "/images/courses/data-science.jpg",
+    image: data,
     duration: "50h 00m",
     whatYouWillLearn: [
       "Work with data using Python, R, SQL, and cloud platforms",
@@ -500,7 +520,7 @@ export const courses: Course[] = [
     id: "blockchain-development",
     title: "Blockchain Development: Build Decentralized Applications & Smart Contracts",
     category: "IT Courses",
-    image: "/images/courses/blockchain-development.jpg",
+    image: blockchain,
     duration: "14 Weeks",
     description:
       "Master blockchain architecture, smart contracts, and dApp development using Ethereum, Solidity, and Hyperledger. This hands-on course is perfect for developers, entrepreneurs, and tech enthusiasts.",
@@ -647,7 +667,7 @@ export const courses: Course[] = [
     id: "iot-course",
     title: "Internet of Things (IoT): From Sensors to Smart Solutions",
     category: "IT Courses",
-    image: "/images/courses/iot-course.jpg",
+    image: iot,
     duration: "14 Weeks",
     description:
       "Build end-to-end IoT solutions using sensors, cloud platforms, and AI. Gain practical experience in hardware integration, security, and real-time analytics for smart applications.",
@@ -838,7 +858,7 @@ export const courses: Course[] = [
     id: "devops",
     title: "DevOps: Mastering Automation, CI/CD, and Cloud Deployment",
     category: "IT Courses",
-    image: "/images/courses/devops.jpg",
+    image: devops,
     duration: "12 Weeks",
     description:
       "Master DevOps principles, CI/CD pipelines, container orchestration, infrastructure as code, and cloud deployment with tools like Jenkins, Docker, Kubernetes, Terraform, and AWS.",
@@ -939,7 +959,7 @@ export const courses: Course[] = [
     id: "software-testing-qa",
     title: "Software Testing & QA: Mastering Manual & Automation Testing",
     category: "IT Courses",
-    image: "/images/courses/software-testing.jpg",
+    image: soft,
     duration: "12 Weeks",
     description:
       "Become proficient in manual and automation testing with hands-on training in tools like Selenium, Cypress, JMeter, Postman, and CI/CD integration.",
@@ -1071,7 +1091,7 @@ export const courses: Course[] = [
     id: "ui-ux-design",
     title: "UI/UX Design: Mastering User Experience & Interface Design",
     category: "IT Courses",
-    image: "/images/courses/ui-ux-design.jpg",
+    image: uiux,
     duration: "14 Weeks",
     description:
       "Master the art and science of creating intuitive, user-friendly digital experiences through comprehensive UI/UX design principles, tools, and hands-on labs using Figma, Adobe XD, and Sketch.",
@@ -1188,8 +1208,1218 @@ export const courses: Course[] = [
         ]
       }
     ]
-  },        
+  },  
+        
+  // Marketing courses
+
+  {
+    id: "sales-marketing-management",
+    title: "Sales & Marketing Management Course",
+    category: "Marketing",
+    image: salesMarketingImage, // Replace with the actual image import
+    duration: "6 Months",
+    description:
+      "Master essential skills in sales, marketing, CRM, and strategy through real-world projects and industry-recognized certifications.",
+    whatYouWillLearn: [
+      "Understand sales & marketing fundamentals",
+      "Develop digital and omnichannel marketing strategies",
+      "Master CRM tools and lead generation techniques",
+      "Apply data-driven insights and analytics",
+      "Gain hands-on experience with real-world projects",
+      "Prepare for certifications like CSP and CMMP"
+    ],
+    includes: [
+      { label: "Live + Pre-recorded sessions", icon: "video" },
+      { label: "Practical case studies & tools training", icon: "code" },
+      { label: "Capstone project & portfolio development", icon: "app-window" },
+      { label: "CRM tools: Salesforce, HubSpot, Zoho", icon: "settings" },
+      { label: "Certification of completion", icon: "certificate" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Sales & Marketing",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Understanding Sales & Marketing Fundamentals" },
+          { title: "Market Research & Consumer Behavior" },
+          { title: "Sales Cycles & Marketing Campaigns" },
+          { title: "B2B vs. B2C Sales Strategies" }
+        ]
+      },
+      {
+        title: "Developing Marketing Strategies",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Brand Strategies & Market Positioning" },
+          { title: "Product Development & Pricing Strategies" },
+          { title: "Segmentation, Targeting, & Positioning (STP)" },
+          { title: "Value Propositions & Go-to-Market Strategies" }
+        ]
+      },
+      {
+        title: "Digital Marketing & Sales Channels",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Digital Marketing Tools & Techniques" },
+          { title: "Social Media, SEO, & Content Marketing" },
+          { title: "Email Marketing, PPC, & Web Analytics" },
+          { title: "Omnichannel Sales Approaches" }
+        ]
+      },
+      {
+        title: "Sales Management & Lead Generation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Prospecting Techniques & Lead Qualification" },
+          { title: "Sales Funnels & Conversion Strategies" },
+          { title: "Cold Calling, Email Outreach, & Pitching" },
+          { title: "Sales Metrics & Performance Evaluation" }
+        ]
+      },
+      {
+        title: "Negotiation & Closing Sales",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Negotiation Techniques & Handling Objections" },
+          { title: "Persuasive Communication Skills" },
+          { title: "Consultative Selling Approaches" },
+          { title: "Sales Closing Techniques & Follow-Up Practices" }
+        ]
+      },
+      {
+        title: "Customer Relationship Management (CRM)",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "CRM Tools (Salesforce, HubSpot, Zoho CRM)" },
+          { title: "Customer Data & Sales Pipelines" },
+          { title: "Retention Strategies & Loyalty Programs" },
+          { title: "Customer Experience (CX) & Service Excellence" }
+        ]
+      },
+      {
+        title: "Strategic Marketing & Branding",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Integrated Marketing Campaigns" },
+          { title: "Brand Identity, Visual Branding, & Messaging" },
+          { title: "Public Relations (PR) & Corporate Communications" },
+          { title: "Influencer & Affiliate Marketing Strategies" }
+        ]
+      },
+      {
+        title: "Data-Driven Sales & Marketing",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Analytics Tools (Google Analytics, CRM Reports)" },
+          { title: "Sales Data, Customer Insights, & Market Trends" },
+          { title: "KPIs & Performance Dashboards" },
+          { title: "Predictive Analytics for Sales Forecasting" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Real-World Sales & Marketing Project" },
+          { title: "Certification Preparation (CSP, CMMP)" },
+          { title: "Portfolio Development" },
+          { title: "Career Skills: Resume Writing, Interview Prep, & Networking" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "digital-marketing-strategies",
+    title: "Digital Marketing: Mastering Online Marketing Strategies & Tools",
+    category: "Marketing",
+    image: digitalMarketingImage, // Replace with your image import
+    duration: "6 Months",
+    description:
+      "Become a proficient digital marketer with hands-on training in SEO, PPC, social media, email marketing, analytics, and campaign management.",
+    whatYouWillLearn: [
+      "Build and optimize websites using WordPress, Wix, or Shopify",
+      "Master SEO, social media, email, and content marketing strategies",
+      "Design, execute, and analyze PPC and Google Ads campaigns",
+      "Use tools like Google Analytics, SEMrush, and Mailchimp effectively",
+      "Develop and automate marketing funnels and email campaigns",
+      "Prepare for certifications from Google, Facebook, and HubSpot"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Real-World Digital Marketing Projects", icon: "app-window" },
+      { label: "Hands-on Tool Training: Google Ads, Analytics, Mailchimp", icon: "settings" },
+      { label: "Portfolio Development & Capstone Campaign", icon: "code" },
+      { label: "Certification of Completion", icon: "certificate" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Digital Marketing",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Digital Marketing Fundamentals" },
+          { title: "Traditional vs. Digital Marketing" },
+          { title: "Marketing Channels, Tools, & Trends" },
+          { title: "Consumer Behavior & Buyer Personas" }
+        ]
+      },
+      {
+        title: "Website Planning & Development",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Designing User-Friendly Websites" },
+          { title: "UI/UX Principles & Design Strategies" },
+          { title: "SEO & Mobile Responsiveness" },
+          { title: "Landing Pages & Lead Capture Techniques" }
+        ]
+      },
+      {
+        title: "Search Engine Optimization (SEO)",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "On-Page & Off-Page SEO Techniques" },
+          { title: "Keyword Research & Content Optimization" },
+          { title: "SEO Tools (Google Search Console, SEMrush, Ahrefs)" },
+          { title: "Website Ranking & Organic Traffic" }
+        ]
+      },
+      {
+        title: "Social Media Marketing (SMM)",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Strategies for Social Media Platforms" },
+          { title: "Engaging Content Creation" },
+          { title: "Paid Advertising & Boosted Posts" },
+          { title: "Social Media Metrics & Performance Analysis" }
+        ]
+      },
+      {
+        title: "Pay-Per-Click (PPC) & Google Ads",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "PPC Campaigns & Bidding Strategies" },
+          { title: "Setting Up Google Ads Campaigns" },
+          { title: "Google Ads Manager & A/B Testing" },
+          { title: "ROI & Ad Performance Analysis" }
+        ]
+      },
+      {
+        title: "Content Marketing & Blogging",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Content Strategies & Editorial Calendars" },
+          { title: "Writing SEO-Friendly Content" },
+          { title: "Content Management Systems (CMS)" },
+          { title: "Content Promotion via Social Media & Email Marketing" }
+        ]
+      },
+      {
+        title: "Email Marketing & Automation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Email Campaigns with MailChimp, HubSpot, & More" },
+          { title: "Email Automation & Drip Campaigns" },
+          { title: "Personalized Emails & Newsletters" },
+          { title: "Open Rates, CTR, & Conversion Analysis" }
+        ]
+      },
+      {
+        title: "Affiliate Marketing & Influencer Marketing",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Affiliate Marketing Models & Platforms" },
+          { title: "Affiliate Campaigns & Tracking Links" },
+          { title: "Influencer Collaborations" },
+          { title: "Campaign Success & Conversion Rates" }
+        ]
+      },
+      {
+        title: "Digital Marketing Analytics & Reporting",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Google Analytics, Tag Manager, & Data Studio" },
+          { title: "Website Traffic & Sales Funnels" },
+          { title: "Campaign Performance & Reporting" },
+          { title: "Data-Driven Insights for Marketing Strategies" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Real-World Digital Marketing Project" },
+          { title: "Professional Portfolio Development" },
+          { title: "Campaign Strategies & Performance Analysis" },
+          { title: "Certification Preparation: Google, Facebook, HubSpot" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "product-marketing-strategies",
+    title: "Product Marketing: Mastering Strategies for Product Success & Market Growth",
+    category: "Marketing",
+    image: productMarketingImage,
+    duration: "6 Months",
+    description:
+      "Gain advanced product marketing skills to successfully launch, promote, and grow products. Perfect for aspiring marketers, business professionals, and entrepreneurs.",
+    whatYouWillLearn: [
+      "Understand the fundamentals of product marketing and its strategic role",
+      "Craft strong product positioning and messaging for market resonance",
+      "Plan and execute effective go-to-market (GTM) strategies",
+      "Promote products via digital marketing, SEO, PPC, and webinars",
+      "Align marketing and sales teams using CRM and sales enablement tools",
+      "Analyze product performance and use insights to scale growth"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Real-World Product Marketing Projects", icon: "app-window" },
+      { label: "Hands-on Tool Training: Salesforce, Mixpanel, Hotjar", icon: "settings" },
+      { label: "Portfolio Development & Product Launch Capstone", icon: "code" },
+      { label: "Certification of Completion", icon: "certificate" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Product Marketing",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Role of Product Marketing vs. Product Management" },
+          { title: "Market Research & Competitive Analysis" },
+          { title: "Customer Segmentation & Buyer Personas" },
+          { title: "Core Concepts in Product Marketing" }
+        ]
+      },
+      {
+        title: "Product Positioning & Messaging",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Crafting Brand Messaging & Value Propositions" },
+          { title: "Writing Effective Positioning Statements" },
+          { title: "Building Product Narratives" },
+          { title: "Analyzing Market Needs & Pain Points" }
+        ]
+      },
+      {
+        title: "Go-to-Market (GTM) Strategy",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Developing GTM Strategies for Product Launches" },
+          { title: "Target Market Identification & Pricing Strategies" },
+          { title: "Sales Channels, Kits, and Product Demos" },
+          { title: "Building Pitch Decks for Market Entry" }
+        ]
+      },
+      {
+        title: "Digital Marketing for Product Promotion",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Content Marketing, SEO, & PPC Campaigns" },
+          { title: "Social Media & Email Campaigns" },
+          { title: "Webinar Marketing & Event Promotion" },
+          { title: "Campaign Optimization & Performance Metrics" }
+        ]
+      },
+      {
+        title: "Sales & Marketing Alignment",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Collaboration Between Sales & Marketing" },
+          { title: "Sales Collateral, Case Studies, and Fact Sheets" },
+          { title: "Sales Training & Product Education" },
+          { title: "CRM Tools: Salesforce, HubSpot, Zoho CRM" }
+        ]
+      },
+      {
+        title: "Product Launch & Market Expansion",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Planning & Executing Product Launches" },
+          { title: "PR, Media Outreach, and Launch Events" },
+          { title: "Product Lifecycle & Evolution Roadmaps" },
+          { title: "International Market Entry Strategies" }
+        ]
+      },
+      {
+        title: "Product Analytics & Market Insights",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Analytics Tools: Google Analytics, Mixpanel, Hotjar" },
+          { title: "User Engagement, Surveys, & Churn Rate Analysis" },
+          { title: "Focus Groups & Feedback Collection" },
+          { title: "Using Data to Refine Product Strategies" }
+        ]
+      },
+      {
+        title: "Growth Marketing & Product Scaling",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Growth Hacking Techniques" },
+          { title: "Customer Retention & Success Programs" },
+          { title: "Product Improvements via Customer Feedback" },
+          { title: "A/B Testing & Iterative Product Development" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Real-World Product Marketing Project" },
+          { title: "Execution of Product Launch & Growth Plan" },
+          { title: "Portfolio Development & Case Documentation" },
+          { title: "Industry Certifications: CPMM, HubSpot, PMA" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "event-marketing-certification",
+    title: "Event Marketing Certification: Strategies for Successful Event Promotions & Engagement",
+    category: "Marketing",
+    image: eventMarketingImage, // Replace with the actual imported image
+    duration: "3 Months",
+    description:
+      "Master the art of promoting and managing events through digital and experiential marketing. Learn how to create engaging campaigns, execute memorable events, and measure success.",
+    whatYouWillLearn: [
+      "Understand the event marketing lifecycle from planning to post-event analysis",
+      "Develop creative event strategies and detailed promotional plans",
+      "Promote events using digital marketing, SEO, and PPC campaigns",
+      "Execute on-ground and virtual events with the latest tools and platforms",
+      "Engage audiences through gamification, live coverage, and interaction",
+      "Analyze event performance and optimize for better ROI"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Projects & Tools Training", icon: "app-window" },
+      { label: "Real-World Event Campaign Portfolio", icon: "code" },
+      { label: "Event Software Training: Eventbrite, Cvent, Whova", icon: "settings" },
+      { label: "Certification of Completion", icon: "certificate" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Event Marketing",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Role of Event Marketing in Business Strategy" },
+          { title: "Types of Events: Corporate, Social, Virtual, Hybrid" },
+          { title: "Understanding the Event Lifecycle" },
+          { title: "Audience Analysis & Targeting" }
+        ]
+      },
+      {
+        title: "Event Planning & Strategy",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Developing Event Themes & Marketing Plans" },
+          { title: "Budget Management & Resource Allocation" },
+          { title: "Venue Selection & Logistics Coordination" },
+          { title: "Vendor & Speaker Management" }
+        ]
+      },
+      {
+        title: "Digital Marketing for Event Promotion",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Social Media & Email Campaigns for Events" },
+          { title: "SEO, PPC, and Listing Events on Online Platforms" },
+          { title: "Event Website & Landing Page Design" },
+          { title: "Content Marketing & Branding Materials" }
+        ]
+      },
+      {
+        title: "On-Ground & Virtual Event Execution",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Scheduling, Team Coordination & Checklists" },
+          { title: "Using Event Software: Eventbrite, Cvent, Whova" },
+          { title: "Virtual Event Platforms: Zoom, Hopin, Airmeet" },
+          { title: "Live Tech Setup & Troubleshooting" }
+        ]
+      },
+      {
+        title: "Audience Engagement & Interaction",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Designing Interactive Sessions: Panels, Workshops" },
+          { title: "Gamification: Polls, Q&As, Networking Games" },
+          { title: "Collecting Feedback & Encouraging Participation" },
+          { title: "Enhancing Experience Through Visual & Audio" }
+        ]
+      },
+      {
+        title: "Event Promotion During & After the Event",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Live Coverage: Social Media, Blogging, Video Snippets" },
+          { title: "Post-Event Content & Follow-ups" },
+          { title: "Thank-you Emails & Continued Engagement" },
+          { title: "Analyzing Event ROI & Key Metrics" }
+        ]
+      },
+      {
+        title: "Event Marketing Analytics & Reporting",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Google Analytics for Event Performance Tracking" },
+          { title: "Monitoring Conversions, Registrations, and Reach" },
+          { title: "Brand Impact Analysis" },
+          { title: "Creating Reports & Data-Driven Strategies" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Capstone Project: Execute a Full Event Campaign" },
+          { title: "Portfolio Development with Real-World Case" },
+          { title: "Certification Exam Preparation: CMP, HubSpot" },
+          { title: "Career Guidance, Resume Building & Interview Prep" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "growth-marketing-certification",
+    title: "Growth Marketing Certification: Driving Business Growth with Data-Driven Strategies",
+    category: "Marketing",
+    image: growthMarketingImage,
+    duration: "3 Months",
+    description:
+      "Master growth marketing with data-driven techniques and practical tools to accelerate customer acquisition, increase retention, and drive sustainable business growth.",
+    whatYouWillLearn: [
+      "Understand the AARRR funnel and key growth metrics",
+      "Design and execute growth experiments using A/B testing and data analysis",
+      "Leverage digital channels like SEO, email, and paid ads for scalable growth",
+      "Automate marketing workflows using tools like HubSpot and Zapier",
+      "Create customer retention strategies that improve lifetime value",
+      "Apply tailored growth strategies to eCommerce, SaaS, B2B, and startups"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Projects with Growth Tools", icon: "app-window" },
+      { label: "Real-World Campaign Portfolio", icon: "code" },
+      { label: "Training with Analytics & Automation Tools", icon: "settings" },
+      { label: "Certification of Completion", icon: "certificate" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Growth Marketing",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "What is Growth Marketing? vs Traditional Marketing" },
+          { title: "The AARRR Funnel Framework" },
+          { title: "Data-Driven Decision Making & KPIs" },
+          { title: "Growth Mindset & Continuous Experimentation" }
+        ]
+      },
+      {
+        title: "Growth Hacking Techniques & Strategies",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Rapid Experimentation Frameworks" },
+          { title: "A/B Testing, Multivariate Testing & Cohort Analysis" },
+          { title: "Referral Loops & Incentive-Based Campaigns" },
+          { title: "Growth Case Studies from Leading Companies" }
+        ]
+      },
+      {
+        title: "Digital Channels for Growth",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "SEO, Content Marketing & Blogging for Growth" },
+          { title: "Email Campaigns & Lead Magnets" },
+          { title: "Paid Ads: Google, Facebook, LinkedIn" },
+          { title: "Affiliate Marketing & Influencer Partnerships" }
+        ]
+      },
+      {
+        title: "Data Analytics & Performance Tracking",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Using Google Analytics, Mixpanel, Hotjar, Heap" },
+          { title: "Tracking User Behavior & Growth Metrics" },
+          { title: "Creating Dashboards for Growth KPIs" },
+          { title: "Using Feedback Loops for Optimization" }
+        ]
+      },
+      {
+        title: "Customer Acquisition & Retention Strategies",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Designing Lead Gen Campaigns & Funnels" },
+          { title: "Landing Page Optimization Techniques" },
+          { title: "Email Drip Campaigns & Push Notifications" },
+          { title: "Loyalty Programs & Churn Reduction" }
+        ]
+      },
+      {
+        title: "Growth Automation & Tools",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Using HubSpot, Zapier & ActiveCampaign" },
+          { title: "Automating Email & Social Campaigns" },
+          { title: "CRM Automation & Integration" },
+          { title: "Tracking & Optimizing with Automated Workflows" }
+        ]
+      },
+      {
+        title: "Growth Marketing in Different Industries",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "E-commerce Growth: CRO, Upselling & Retargeting" },
+          { title: "SaaS: Product-Led Growth & Freemium Models" },
+          { title: "B2B: ABM, Lead Scoring, and Enablement" },
+          { title: "Startups: Growth Launch Tactics & Virality" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Capstone: Execute a Real-World Growth Campaign" },
+          { title: "Build & Present Your Growth Portfolio" },
+          { title: "Prepare for HubSpot, Google, and GMP Certifications" },
+          { title: "Resume, Career Coaching & Placement Support" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "social-media-marketing-certification",
+    title: "Social Media Marketing Certification: Mastering Digital Engagement & Brand Growth",
+    category: "Marketing",
+    image: socialMediaMarketingImage, 
+    duration: "3 Months",
+    description:
+      "Master the art of digital engagement and brand growth through effective social media strategies, content creation, analytics, and influencer collaboration.",
+    whatYouWillLearn: [
+      "Build platform-specific strategies for Facebook, Instagram, LinkedIn, and more",
+      "Develop targeted social media campaigns using buyer personas and KPIs",
+      "Create compelling visuals, videos, and CTAs for engagement",
+      "Manage paid advertising campaigns with A/B testing and retargeting",
+      "Analyze performance using tools like Facebook Insights and Google Analytics",
+      "Collaborate with influencers and build strong brand communities"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Projects & Content Tools", icon: "app-window" },
+      { label: "Real-World Campaign Portfolio", icon: "code" },
+      { label: "Training in Ads, Analytics & Influencer Strategy", icon: "settings" },
+      { label: "Certification of Completion", icon: "certificate" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Social Media Marketing",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Social Media Marketing Overview" },
+          { title: "Platform-Specific Strategies: Facebook, Instagram, LinkedIn, etc." },
+          { title: "Trends and Emerging Platforms (TikTok, Threads, etc.)" },
+          { title: "Setting Social Media Objectives" }
+        ]
+      },
+      {
+        title: "Developing a Social Media Strategy",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Market Research & Competitor Analysis" },
+          { title: "Audience Identification & Buyer Personas" },
+          { title: "SMART Goal Setting & KPIs" },
+          { title: "Creating a Content Calendar" }
+        ]
+      },
+      {
+        title: "Content Creation & Management",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Creating High-Impact Visuals, Reels & Stories" },
+          { title: "Using Canva, Adobe Spark & Crello for Graphics" },
+          { title: "Writing Persuasive Copy & CTAs" },
+          { title: "Scheduling Tools: Buffer, Hootsuite, Sprout Social" }
+        ]
+      },
+      {
+        title: "Paid Advertising & Campaign Management",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Facebook, Instagram & LinkedIn Ads Setup" },
+          { title: "Targeting, Bidding & Budgeting Techniques" },
+          { title: "A/B Testing & Performance Optimization" },
+          { title: "Retargeting Campaigns for Conversions" }
+        ]
+      },
+      {
+        title: "Social Media Analytics & Reporting",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Using Analytics Tools: Facebook, Instagram, Google" },
+          { title: "Monitoring Engagement, CTR, Reach & Impressions" },
+          { title: "Creating Campaign Performance Reports" },
+          { title: "Data-Driven Strategy Refinement" }
+        ]
+      },
+      {
+        title: "Community Management & Engagement",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Managing Online Communities & Brand Pages" },
+          { title: "Handling Comments, DMs & Reviews Professionally" },
+          { title: "Influencer Collaborations & Community Expansion" },
+          { title: "Crisis Management & Brand Protection" }
+        ]
+      },
+      {
+        title: "Influencer Marketing & Collaboration",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Identifying Relevant Influencers" },
+          { title: "Executing Campaigns: Reviews, Giveaways, Partnerships" },
+          { title: "Measuring Influencer ROI & Impact" },
+          { title: "Ethical & Legal Guidelines for Collaborations" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Designing a Social Media Campaign Strategy" },
+          { title: "Launching & Managing a Live Campaign" },
+          { title: "Creating a Portfolio of Campaign Projects" },
+          { title: "Certification Prep: Facebook Blueprint, HubSpot, Hootsuite" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "sales-development-salesforce-certification",
+    title: "Sales Development & Salesforce Certification: Mastering CRM & Sales Strategies",
+    category: "Marketing",
+    image: salesforceCertificationImage, 
+    duration: "6 Months",
+    description:
+      "Gain deep expertise in sales development and Salesforce CRM with this hands-on program. Master lead generation, pipeline management, automation, and prepare for top Salesforce certifications.",
+    whatYouWillLearn: [
+      "Understand B2B vs B2C sales strategies and essential SDR tools",
+      "Craft compelling sales pitches, cold emails, and master objection handling",
+      "Use Salesforce CRM to manage contacts, leads, and pipelines",
+      "Automate sales processes using Salesforce Flows, Workflows, and Process Builder",
+      "Generate and track leads using Salesforce automation",
+      "Build custom reports and dashboards for sales analytics"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Salesforce CRM Training", icon: "app-window" },
+      { label: "Real-World Sales Campaign Projects", icon: "code" },
+      { label: "Certification Preparation: Admin, SDR & Consultant", icon: "certificate" },
+      { label: "Career Support & Portfolio Development", icon: "settings" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Sales Development",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Role of SDRs in Business Growth" },
+          { title: "B2B vs B2C Sales Strategies" },
+          { title: "Essential Sales Tools (Salesforce, HubSpot, Outreach)" },
+          { title: "Sales KPIs: Lead Gen, Conversion, Pipeline Management" }
+        ]
+      },
+      {
+        title: "Sales Strategies & Techniques",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Crafting Value Propositions & Sales Pitches" },
+          { title: "Cold Calling, Email Outreach & Social Selling" },
+          { title: "Overcoming Objections & Using Sales Scripts" },
+          { title: "Building Relationships & Establishing Trust" }
+        ]
+      },
+      {
+        title: "Salesforce Fundamentals",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Overview of the Salesforce Ecosystem" },
+          { title: "Managing Leads, Contacts & Accounts" },
+          { title: "Customizing Salesforce Fields, Objects & Layouts" },
+          { title: "Creating Dashboards & Reports" }
+        ]
+      },
+      {
+        title: "Lead Generation & Management in Salesforce",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Inbound vs Outbound Lead Generation Techniques" },
+          { title: "Lead Capture, Nurturing & Tracking in Salesforce" },
+          { title: "Lead Scoring & Assignment Automation" },
+          { title: "Monitoring Lead Engagement Metrics" }
+        ]
+      },
+      {
+        title: "Sales Pipeline Management",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Designing a Sales Funnel & Opportunity Stages" },
+          { title: "Revenue Forecasting with Salesforce Sales Cloud" },
+          { title: "Pipeline Tracking & Sales Process Optimization" },
+          { title: "Boosting Productivity with Flows & Workflows" }
+        ]
+      },
+      {
+        title: "Salesforce Automation & Integrations",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Automating Sales Tasks with Flows & Process Builder" },
+          { title: "Salesforce Integrations with Marketing & Comms Tools" },
+          { title: "Exploring AppExchange Extensions" },
+          { title: "Using Salesforce APIs for Advanced Integrations" }
+        ]
+      },
+      {
+        title: "Advanced Salesforce Reporting & Analytics",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Creating Reports, Dashboards & Using Einstein Analytics" },
+          { title: "Tracking Conversion, Revenue & Performance" },
+          { title: "Developing Custom Visual Reports" },
+          { title: "Implementing Data-Driven Sales Strategy" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "4 Weeks",
+        chapters: [
+          { title: "Sales Development Capstone Project (CRM / Campaign)" },
+          { title: "Portfolio Development with Practical Salesforce Use Cases" },
+          { title: "Salesforce Certified SDR, Admin & Sales Cloud Prep" },
+          { title: "Resume Building, Interview Coaching, Career Support" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "advanced-analytics-data-driven-marketing",
+    title: "Advanced Analytics & Data-Driven Marketing Certification: Harnessing Insights for Strategic Growth",
+    category: "Marketing",
+    image: dataDrivenMarketingImage, 
+    duration: "6 Months",
+    description:
+      "Master data-driven marketing and advanced analytics tools to drive strategic decisions and measurable marketing success. Ideal for marketers and data analysts seeking to boost campaign ROI and customer insights.",
+    whatYouWillLearn: [
+      "Apply analytics to drive marketing decisions and improve ROI",
+      "Use Google Analytics, HubSpot, Hotjar, and Tableau effectively",
+      "Develop segmentation and targeting strategies using data insights",
+      "Implement predictive analytics and marketing automation tools",
+      "Optimize user journeys and boost conversions with CRO techniques",
+      "Build dashboards and visualize marketing performance effectively"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Analytics Tool Practice", icon: "app-window" },
+      { label: "Real-World Data Projects & Portfolio", icon: "code" },
+      { label: "Certification Preparation (Google, HubSpot, DMI)", icon: "certificate" },
+      { label: "Career Coaching & Job Placement Help", icon: "settings" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Data-Driven Marketing",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Evolution of Marketing: From Intuition to Data" },
+          { title: "Role of Analytics in Modern Marketing" },
+          { title: "Key Marketing Metrics: CLV, ROAS, Conversion Rate" },
+          { title: "Adopting a Data-Driven Mindset" }
+        ]
+      },
+      {
+        title: "Marketing Analytics Tools & Technologies",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Google Analytics, Adobe Analytics, and Hotjar" },
+          { title: "CRM Analytics: Salesforce, HubSpot, Zoho" },
+          { title: "Social Media Analytics: Meta, Twitter, LinkedIn" },
+          { title: "Email Analytics: Mailchimp, ActiveCampaign" }
+        ]
+      },
+      {
+        title: "Customer Segmentation & Targeting",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Market Research & Competitor Analysis" },
+          { title: "Customer Personas & Segmentation Strategies" },
+          { title: "Personalized Marketing via Data Insights" },
+          { title: "Behavioral & Demographic Targeting with AI" }
+        ]
+      },
+      {
+        title: "Predictive Analytics & Marketing Automation",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Regression, Time Series & Predictive Modeling" },
+          { title: "Automating Campaigns with HubSpot, Marketo, Pardot" },
+          { title: "Lead Scoring & Predictive Sales Readiness" },
+          { title: "Behavior-Triggered Automated Workflows" }
+        ]
+      },
+      {
+        title: "Data Visualization & Reporting",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Using Google Data Studio, Tableau & Power BI" },
+          { title: "Building Dashboards & Custom Reports" },
+          { title: "Communicating Insights to Stakeholders" },
+          { title: "Data Storytelling for Marketing Strategy" }
+        ]
+      },
+      {
+        title: "Conversion Rate Optimization (CRO) Techniques",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "Analyzing User Behavior with Hotjar & Session Recordings" },
+          { title: "A/B Testing & Multivariate Testing" },
+          { title: "Funnel Analysis & Customer Journey Mapping" },
+          { title: "Website & Landing Page CRO Tactics" }
+        ]
+      },
+      {
+        title: "ROI Measurement & Marketing Attribution",
+        lecturesCount: 4,
+        duration: "2 Weeks",
+        chapters: [
+          { title: "ROI Measurement & Marketing Effectiveness" },
+          { title: "Attribution Models: First-Touch, Last-Touch, Multi-Touch" },
+          { title: "Revenue vs Spend Analysis for Campaigns" },
+          { title: "Optimizing Budget Allocation with Data" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "4 Weeks",
+        chapters: [
+          { title: "Capstone: E-commerce, Social Media, or Campaign Analytics Project" },
+          { title: "Portfolio Building for Job Readiness" },
+          { title: "Certification Prep: Google, HubSpot, DMI" },
+          { title: "Resume, Interview, & Career Coaching" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "influencer-marketing-certification",
+    title: "Influencer Marketing Certification: Leveraging Influencers for Brand Growth",
+    category: "Marketing",
+    image: influencerMarketingImage,
+    duration: "3 Months",
+    description:
+      "Master influencer marketing with real-world tools and strategies to enhance brand reach, engagement, and revenue. Learn how to find influencers, build campaigns, and measure ROI effectively.",
+    whatYouWillLearn: [
+      "Understand the fundamentals of influencer marketing and its impact on brand growth",
+      "Identify and evaluate the right influencers using leading discovery tools",
+      "Design effective influencer campaigns with measurable objectives and KPIs",
+      "Manage influencer relationships, negotiate contracts, and guide content creation",
+      "Track campaign performance and ROI using analytics tools like Hootsuite and Google Analytics",
+      "Stay compliant with legal and ethical marketing practices"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Experience with Influencer Tools", icon: "app-window" },
+      { label: "Real-World Projects & Portfolio", icon: "code" },
+      { label: "Certification Preparation (HubSpot, DMI)", icon: "certificate" },
+      { label: "Career Coaching & Job Assistance", icon: "settings" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Influencer Marketing",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Influencer Marketing Fundamentals & Benefits" },
+          { title: "Types of Influencers: Nano, Micro, Macro, Mega" },
+          { title: "Successful Campaign Case Studies" },
+          { title: "Strategic Role of Influencers in Marketing" }
+        ]
+      },
+      {
+        title: "Influencer Discovery & Selection",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Finding Influencers that Align with Brand Values" },
+          { title: "Using Upfluence, Aspire, and HypeAuditor" },
+          { title: "Evaluating Influencer Engagement & Authenticity" },
+          { title: "Building Shortlists & Long-Term Strategies" }
+        ]
+      },
+      {
+        title: "Developing Influencer Campaigns",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Designing Campaigns for Awareness & Sales" },
+          { title: "Setting Objectives & KPIs" },
+          { title: "Collaborating on Engaging Influencer Content" },
+          { title: "Contracts, Guidelines, and Deliverables" }
+        ]
+      },
+      {
+        title: "Influencer Outreach & Relationship Management",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Creating Personalized Outreach Strategies" },
+          { title: "Email Templates & Communication Best Practices" },
+          { title: "Negotiating Terms & Pricing" },
+          { title: "Fostering Long-Term Influencer Partnerships" }
+        ]
+      },
+      {
+        title: "Content Creation & Promotion Strategies",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Aligning Influencer Content with Brand Voice" },
+          { title: "Leveraging Stories, Reels, Videos & Blogs" },
+          { title: "Cross-Platform Promotion: Instagram, TikTok, YouTube" },
+          { title: "Driving Conversions with Influencer Content" }
+        ]
+      },
+      {
+        title: "Measuring Influencer Campaign Performance",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Tracking Metrics: Reach, Engagement, ROI" },
+          { title: "Using Hootsuite, Social Blade, Google Analytics" },
+          { title: "Optimizing Based on Campaign Performance" },
+          { title: "Building Data-Driven Campaign Strategies" }
+        ]
+      },
+      {
+        title: "Legal & Ethical Considerations",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Influencer Marketing Laws & Ethics" },
+          { title: "FTC Guidelines & Compliance Practices" },
+          { title: "Avoiding Influencer Scams & Missteps" },
+          { title: "Managing Brand Reputation in Crisis" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Capstone: Real-World Influencer Marketing Campaign" },
+          { title: "Portfolio Development for Career Showcase" },
+          { title: "Certification Prep: HubSpot, DMI, IMH" },
+          { title: "Resume, Interview & Networking Guidance" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "marketing-management-certification",
+    title: "Marketing Management Certification: Mastering Strategic Marketing & Business Growth",
+    category: "Marketing",
+    image: marketingManagementImage,
+    duration: "3 Months",
+    description:
+      "Build strategic marketing skills with this comprehensive program focused on brand management, marketing strategy, digital tools, and performance analytics to drive business growth.",
+    whatYouWillLearn: [
+      "Understand the role of marketing in business success and strategic growth",
+      "Develop comprehensive marketing strategies and brand positioning plans",
+      "Master pricing, sales, and distribution strategies across different channels",
+      "Leverage digital marketing tools including SEO, social media, and automation",
+      "Track and analyze marketing performance using analytics platforms",
+      "Prepare for globally recognized certifications in marketing management"
+    ],
+    includes: [
+      { label: "Live + Recorded Sessions", icon: "video" },
+      { label: "Hands-on Tools & Frameworks", icon: "app-window" },
+      { label: "Capstone Project & Portfolio", icon: "code" },
+      { label: "Certification Prep (HubSpot, AMA, CMMP)", icon: "certificate" },
+      { label: "Career Support & Placement", icon: "settings" }
+    ],
+    modules: [
+      {
+        title: "Introduction to Marketing Management",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Role of Marketing Management in Business" },
+          { title: "Key Marketing Concepts & Theories" },
+          { title: "Marketing Mix (4Ps): Product, Price, Place, Promotion" },
+          { title: "Market Trends, Consumer Behavior & Competitor Analysis" }
+        ]
+      },
+      {
+        title: "Developing Marketing Strategies",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Setting Marketing Objectives & Goals" },
+          { title: "Crafting Strategic Marketing Plans" },
+          { title: "Using SWOT & PESTLE for Strategic Insights" },
+          { title: "Target Market & Segmentation Techniques" }
+        ]
+      },
+      {
+        title: "Brand Management & Positioning",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Building Brand Identity & Equity" },
+          { title: "Brand Positioning Strategies" },
+          { title: "Brand Messaging & Communication Plans" },
+          { title: "Brand Campaigns & Case Studies" }
+        ]
+      },
+      {
+        title: "Product Development & Lifecycle Management",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Product Development Stages" },
+          { title: "Product Lifecycle Strategies" },
+          { title: "Product Launch & Market Penetration Plans" },
+          { title: "Developing Value Propositions & Differentiation" }
+        ]
+      },
+      {
+        title: "Pricing Strategies & Sales Management",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Understanding Pricing Models" },
+          { title: "Strategic Pricing for Market Segments" },
+          { title: "Sales Planning & Sales Management Techniques" },
+          { title: "Implementing B2B, B2C, and Direct Sales Strategies" }
+        ]
+      },
+      {
+        title: "Distribution & Channel Management",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Exploring Distribution Channels" },
+          { title: "Managing Vendors & Distribution Partners" },
+          { title: "Logistics & Inventory Management" },
+          { title: "Improving Distribution Efficiency" }
+        ]
+      },
+      {
+        title: "Integrated Marketing Communications (IMC)",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Communication Strategy Development" },
+          { title: "Digital & Traditional Marketing Channels" },
+          { title: "Advertising, PR, Sales Promotion & Personal Selling" },
+          { title: "Consistent Brand Messaging Across Channels" }
+        ]
+      },
+      {
+        title: "Digital Marketing & Emerging Trends",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Digital Marketing Tools: SEO, SEM, Email, Social" },
+          { title: "Content, Influencer & Video Marketing" },
+          { title: "Emerging Trends: AI, Automation, Metaverse" },
+          { title: "Adapting to Changing Consumer Preferences" }
+        ]
+      },
+      {
+        title: "Marketing Analytics & Performance Measurement",
+        lecturesCount: 4,
+        duration: "1 Week",
+        chapters: [
+          { title: "Tracking KPIs: ROI, CAC, Conversion Rates" },
+          { title: "Using Google Analytics, HubSpot, SEMrush" },
+          { title: "Data-Driven Marketing Optimization" },
+          { title: "Analyzing Consumer Feedback & Market Research" }
+        ]
+      },
+      {
+        title: "Capstone Project & Certification Preparation",
+        lecturesCount: 4,
+        duration: "3 Weeks",
+        chapters: [
+          { title: "Capstone: Real-World Marketing Project" },
+          { title: "Portfolio Development for Job Readiness" },
+          { title: "Certification Prep: CMMP, HubSpot, AMA PCM" },
+          { title: "Career Coaching: Resume, Interviews, Networking" }
+        ]
+      }
+    ]
+  }
   
-  
-  
+  // Finance courses 
+
+
 ];

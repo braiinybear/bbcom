@@ -73,6 +73,7 @@ const Header: React.FC = () => {
     { name: "What We Do", path: "/our-work" },
     { name: "Gallery", path: "/gallery" },
     { name: "Inquiry", path: "/contact" },
+    { name: "Courses", path: "/courses" },
   ];
 
   const buttonClasses = "bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50";
