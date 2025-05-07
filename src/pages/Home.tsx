@@ -279,28 +279,25 @@ const Home: React.FC = () => {
 
       {/* Volunteer/Donate CTA */}
       <section className="py-16 px-6 bg-blue-50">
-        <div className="container mx-auto">
-          <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-            <div className="grid md:grid-cols-2">
-              <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold mb-6">Join Our Mission</h2>
-                <p className="text-gray-600 mb-8">Your support can make a significant difference in the lives of those we serve. Join us as a volunteer or consider making a donation to support our programs.</p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/volunteer" className="bg-blue-600 hover:bg-[var(--primary-main)] text-white font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
-                    Volunteer With Us
-                  </Link>
-                  <Link to="/donate" className="bg-[var(--primary-main)] hover:bg-[var(--primary-main)] text-white font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
-                    Donate Now
-                  </Link>
-                </div>
-              </div>
-              <div className="hidden md:block relative">
-                <img src={img2} alt="Volunteers working" className="absolute inset-0 w-full h-full object-cover" />
-              </div>
-            </div>
+  <div className="container mx-auto">
+    <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+      <div className="grid md:grid-cols-2">
+        <div className="p-8 md:p-12 flex flex-col justify-center">
+          <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
+          <p className="text-gray-600 mb-8">Have questions or want to learn more about our work? Our team is ready to assist you with any inquiries. We value your feedback and look forward to hearing from you.</p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
+              Contact Us
+            </Link>
           </div>
         </div>
-      </section>
+        <div className="hidden md:block relative">
+          <img src={img2} alt="Contact us" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Upcoming Events */}
       <section className="py-16 px-6">

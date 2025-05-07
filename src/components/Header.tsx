@@ -6,17 +6,32 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("/");
+  const [activeParent, setActiveParent] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Define navigation items early to use in the useEffect
+  // Now using the already defined navItems
+
+  // Helper function to check if a path is a child and return parent
+  const findParentPath = (currentPath: string): string | null => {
+    for (const item of navItems) {
+      if (item.children) {
+        for (const child of item.children) {
+          if (child.path === currentPath) {
+            return item.path;
+          }
+        }
+      }
+    }
+    return null;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
-    const currentPath = window.location.pathname;
-    setActiveItem(currentPath);
 
     window.addEventListener("scroll", handleScroll);
 
@@ -51,6 +66,28 @@ const Header: React.FC = () => {
     };
   }, [isMenuOpen]);
 
+  // Update activeItem and activeParent when location changes
+  useEffect(() => {
+    const updateActiveItem = () => {
+      const currentPath = window.location.pathname;
+      setActiveItem(currentPath);
+      
+      // Check if current path is a child item and set parent as active
+      const parentPath = findParentPath(currentPath);
+      setActiveParent(parentPath);
+    };
+    
+    // Set initial value
+    updateActiveItem();
+    
+    // Listen for changes to the URL
+    window.addEventListener('popstate', updateActiveItem);
+    
+    return () => {
+      window.removeEventListener('popstate', updateActiveItem);
+    };
+  }, []);
+
   const toggleDropdown = (name: string) => {
     if (openDropdown === name) {
       setOpenDropdown(null);
@@ -72,7 +109,6 @@ const Header: React.FC = () => {
     },
     { name: "What We Do", path: "/our-work" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Inquiry", path: "/contact" },
     { name: "Courses", path: "/courses" },
   ];
 
@@ -119,9 +155,12 @@ const Header: React.FC = () => {
             <div key={item.name} className="relative group">
               <Link
                 to={item.path}
-                onClick={() => setActiveItem(item.path)}
+                onClick={() => {
+                  setActiveItem(item.path);
+                  setActiveParent(null); // Clear parent when directly clicking a main item
+                }}
                 className={`relative text-base xl:text-lg font-medium transition-all duration-300 group-hover:text-[var(--primary-main)] ${
-                  activeItem === item.path
+                  activeItem === item.path || activeParent === item.path
                     ? "text-[var(--primary-main)]"
                     : "text-black"
                 } flex items-center`}
@@ -147,7 +186,7 @@ const Header: React.FC = () => {
                 )}
                 <span
                   className={`absolute -bottom-2 left-0 w-0 h-0.5 bg-[var(--primary-main)] transition-all duration-300 ${
-                    activeItem === item.path ? "w-full" : "group-hover:w-full"
+                    activeItem === item.path || activeParent === item.path ? "w-full" : "group-hover:w-full"
                   }`}
                 ></span>
               </Link>
@@ -161,9 +200,12 @@ const Header: React.FC = () => {
                       to={child.path}
                       onClick={() => {
                         setActiveItem(child.path);
+                        setActiveParent(item.path); // Set the parent as active when clicking a child
                         setIsMenuOpen(false);
                       }}
-                      className="block px-4 py-2 text-sm text-black hover:bg-gray-100 hover:text-[var(--primary-main)] transition-all duration-200"
+                      className={`block px-4 py-2 text-sm hover:bg-gray-100 hover:text-[var(--primary-main)] transition-all duration-200 ${
+                        activeItem === child.path ? "text-[var(--primary-main)] bg-gray-50" : "text-black"
+                      }`}
                     >
                       {child.name}
                     </Link>
@@ -172,9 +214,10 @@ const Header: React.FC = () => {
               )}
             </div>
           ))}
-          <div className="flex space-x-2 xl:space-x-4 pr-2 sm:pr-4 md:pr-6 lg:pr-8">
-            <button className={buttonClasses}>Volunteer</button>
-            <button className={buttonClasses}>Get Involved</button>
+          <div className="flex pr-2 sm:pr-4 md:pr-6 lg:pr-8">
+            <Link to="/contact" onClick={() => setActiveItem("/contact")}>
+              <button className={buttonClasses}>Get In Touch</button>
+            </Link>
           </div>
         </nav>
 
@@ -286,13 +329,15 @@ const Header: React.FC = () => {
                 )}
               </li>
             ))}
-            <li className="w-full px-4 pt-4 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-              <button className={`${buttonClasses} w-full sm:w-1/2`}>
-                Volunteer
-              </button>
-              <button className={`${buttonClasses} w-full sm:w-1/2`}>
-                Donate
-              </button>
+            <li className="w-full px-4 pt-4">
+              <Link to="/contact" className="w-full block" onClick={() => setActiveItem("/contact")}>
+                <button
+                  className={`${buttonClasses} w-full`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Get In Touch
+                </button>
+              </Link>
             </li>
           </ul>
         </div>
