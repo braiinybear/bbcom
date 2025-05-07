@@ -13,7 +13,7 @@ const Courses = () => {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 to-white pb-4">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
           Explore Our <span className="text-blue-700">{selectedCategory}</span>
         </h1>

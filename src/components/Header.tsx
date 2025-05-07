@@ -76,17 +76,18 @@ const Header: React.FC = () => {
     { name: "Courses", path: "/courses" },
   ];
 
-  const buttonClasses = "bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50";
+  const buttonClasses =
+    "bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50";
 
   return (
     <header
-      className={`w-full top-0 left-0 z-50 transition-all duration-700 ${isScrolled
+      className={`w-full top-0 left-0 z-50 transition-all duration-700 ${
+        isScrolled
           ? "bg-white shadow-lg py-2"
           : "bg-white/80 backdrop-blur-md py-2 sm:py-4"
-        }`}
+      }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo - Added additional padding/margins */}
+      <div className="w-full px-2 flex justify-between items-center gap-4">
         <Link
           to="/"
           className="flex items-center group sm:pl-4 md:pl-6 lg:pl-8"
@@ -113,14 +114,17 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
+        <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
           {navItems.map((item) => (
             <div key={item.name} className="relative group">
               <Link
                 to={item.path}
                 onClick={() => setActiveItem(item.path)}
-                className={`relative text-base xl:text-lg font-medium transition-all duration-300 group-hover:text-[var(--primary-main)] ${activeItem === item.path ? "text-[var(--primary-main)]" : "text-black"
-                  } flex items-center`}
+                className={`relative text-base xl:text-lg font-medium transition-all duration-300 group-hover:text-[var(--primary-main)] ${
+                  activeItem === item.path
+                    ? "text-[var(--primary-main)]"
+                    : "text-black"
+                } flex items-center`}
                 aria-expanded={item.children ? "false" : undefined}
                 aria-haspopup={item.children ? "true" : undefined}
               >
@@ -133,12 +137,18 @@ const Header: React.FC = () => {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 )}
                 <span
-                  className={`absolute -bottom-2 left-0 w-0 h-0.5 bg-[var(--primary-main)] transition-all duration-300 ${activeItem === item.path ? "w-full" : "group-hover:w-full"
-                    }`}
+                  className={`absolute -bottom-2 left-0 w-0 h-0.5 bg-[var(--primary-main)] transition-all duration-300 ${
+                    activeItem === item.path ? "w-full" : "group-hover:w-full"
+                  }`}
                 ></span>
               </Link>
 
@@ -163,12 +173,8 @@ const Header: React.FC = () => {
             </div>
           ))}
           <div className="flex space-x-2 xl:space-x-4 pr-2 sm:pr-4 md:pr-6 lg:pr-8">
-            <button className={buttonClasses}>
-              Volunteer
-            </button>
-            <button className={buttonClasses}>
-              Get Involved
-            </button>
+            <button className={buttonClasses}>Volunteer</button>
+            <button className={buttonClasses}>Get Involved</button>
           </div>
         </nav>
 
@@ -185,16 +191,19 @@ const Header: React.FC = () => {
         >
           <div className="w-6 h-6 relative flex items-center justify-center">
             <span
-              className={`absolute h-0.5 w-full bg-black transform transition-all duration-300 ${isMenuOpen ? "rotate-45 top-3" : "rotate-0 top-1"
-                }`}
+              className={`absolute h-0.5 w-full bg-black transform transition-all duration-300 ${
+                isMenuOpen ? "rotate-45 top-3" : "rotate-0 top-1"
+              }`}
             ></span>
             <span
-              className={`absolute h-0.5 w-full bg-black transform transition-all duration-300 ${isMenuOpen ? "opacity-0 w-0" : "opacity-100 w-full top-3"
-                }`}
+              className={`absolute h-0.5 w-full bg-black transform transition-all duration-300 ${
+                isMenuOpen ? "opacity-0 w-0" : "opacity-100 w-full top-3"
+              }`}
             ></span>
             <span
-              className={`absolute h-0.5 w-full bg-black transform transition-all duration-300 ${isMenuOpen ? "-rotate-45 top-3" : "rotate-0 top-5"
-                }`}
+              className={`absolute h-0.5 w-full bg-black transform transition-all duration-300 ${
+                isMenuOpen ? "-rotate-45 top-3" : "rotate-0 top-5"
+              }`}
             ></span>
           </div>
         </button>
@@ -202,10 +211,11 @@ const Header: React.FC = () => {
         {/* Mobile Menu */}
         <div
           ref={menuRef}
-          className={`fixed top-[60px] sm:top-[72px] md:top-[84px] left-0 w-full bg-white shadow-xl transition-all duration-500 ease-in-out ${isMenuOpen
+          className={`fixed top-[60px] sm:top-[72px] md:top-[84px] left-0 w-full bg-white shadow-xl transition-all duration-500 ease-in-out ${
+            isMenuOpen
               ? "max-h-screen opacity-100 overflow-y-auto"
               : "max-h-0 opacity-0 pointer-events-none overflow-hidden"
-            } lg:hidden`}
+          } lg:hidden`}
         >
           <ul className="flex flex-col items-center space-y-1 py-4">
             {navItems.map((item) => (
@@ -220,18 +230,27 @@ const Header: React.FC = () => {
                       {item.name}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`h-4 w-4 transition-transform duration-300 ${openDropdown === item.name ? "rotate-180" : ""
-                          }`}
+                        className={`h-4 w-4 transition-transform duration-300 ${
+                          openDropdown === item.name ? "rotate-180" : ""
+                        }`}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
                     <div
-                      className={`flex flex-col text-left transition-all duration-300 overflow-hidden ${openDropdown === item.name ? "max-h-48 opacity-100 py-2" : "max-h-0 opacity-0"
-                        }`}
+                      className={`flex flex-col text-left transition-all duration-300 overflow-hidden ${
+                        openDropdown === item.name
+                          ? "max-h-48 opacity-100 py-2"
+                          : "max-h-0 opacity-0"
+                      }`}
                     >
                       {item.children.map((child) => (
                         <Link
@@ -252,10 +271,11 @@ const Header: React.FC = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`block py-3 px-4 text-base md:text-lg font-medium transition-all duration-300 ${activeItem === item.path
+                    className={`block py-3 px-4 text-base md:text-lg font-medium transition-all duration-300 ${
+                      activeItem === item.path
                         ? "text-[var(--primary-main)] bg-gray-100"
                         : "text-black hover:text-[var(--primary-main)] hover:bg-gray-100"
-                      }`}
+                    }`}
                     onClick={() => {
                       setActiveItem(item.path);
                       setIsMenuOpen(false);

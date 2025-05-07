@@ -1,9 +1,7 @@
 const categories = [
     "IT Courses",
     "Marketing",
-    "Web Development",
-    "Communication",
-    "Business Analytics & Intelligence",
+    "Finance",
   ];
   
   interface Props {

@@ -21,6 +21,19 @@ import dataDrivenMarketingImage from "../assets/marketing/Advanced-Analytics.jpg
 import influencerMarketingImage from "../assets/marketing/Influencer-Marketing.jpg"
 import marketingManagementImage from "../assets/marketing/Marketing-Management.jpg"
 
+//finance 
+import frmCourseImage from "../assets/finance/Blue White Minimalist Finance Management Presentation (1).jpg";
+import caiaCourseImage from "../assets/finance/CAIA Course.png";
+import financialAnalyticsImage from "../assets/finance/Green and White Simple Illustrative Data Analytics Presentation.jpg";
+import ifrsCertificationImage from "../assets/finance/IFRS COURSE nO 4.png";
+import financialModelingImage from "../assets/finance/Purple and Pink Modelling Course YouTube Thumbnail.jpg";
+import financialPlanningImage from "../assets/finance/Financial planning and wealth management.png";
+import investmentBankingImage from "../assets/finance/Blue White Modern Investment Presentation (1).jpg"; 
+import batCourseImage from "../assets/finance/Teal and Blue Minimalist Business Accounting Presentation.jpg";
+import gstCourseImage from "../assets/finance/gst .png";
+import cmaCourseImage from "../assets/finance/CMA.png";
+
+
 export const courses: Course[] = [
   {
     id: "ai-ml-course",
@@ -1209,8 +1222,8 @@ export const courses: Course[] = [
       }
     ]
   },  
-        
-  // Marketing courses
+
+// Marketing courses
 
   {
     id: "sales-marketing-management",
@@ -2417,9 +2430,1273 @@ export const courses: Course[] = [
         ]
       }
     ]
-  }
+  },
   
-  // Finance courses 
+// Finance courses
 
+{
+  id: "financial-risk-manager-frm",
+  title: "Financial Risk Manager (FRM) Certification: Mastering Risk Management for Global Finance",
+  category: "Finance",
+  image: frmCourseImage,
+  duration: "6–7 Months",
+  description:
+    "Prepare for the globally recognized FRM certification by mastering financial risk principles, quantitative analysis, market and credit risk, and compliance frameworks used in banking and finance.",
+  whatYouWillLearn: [
+    "Understand key principles of financial risk management, governance, and ethics",
+    "Analyze financial products including derivatives, bonds, and structured instruments",
+    "Master risk types: market, credit, operational, and liquidity",
+    "Apply quantitative tools for predictive modeling and data analysis",
+    "Gain insights into alternative investments and risk regulations",
+    "Prepare for GARP's FRM Part 1 & 2 certification exams"
+  ],
+  includes: [
+    { label: "FRM Part 1 & 2 Coverage", icon: "book" },
+    { label: "Quantitative & Financial Tools", icon: "app-window" },
+    { label: "Practice Exams & Question Banks", icon: "file" },
+    { label: "Certification Prep (GARP FRM)", icon: "certificate" },
+    { label: "Career Support & Placement", icon: "settings" }
+  ],
+  modules: [
+    {
+      title: "FRM Part 1: Foundations of Risk Management",
+      lecturesCount: 3,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Risk Management Principles, Governance & Ethics" },
+        { title: "Introduction to Financial Risk Types" },
+        { title: "Case Studies in Risk Frameworks" }
+      ]
+    },
+    {
+      title: "FRM Part 1: Quantitative Analysis",
+      lecturesCount: 6,
+      duration: "1 Month",
+      chapters: [
+        { title: "Mathematics & Probability Foundations" },
+        { title: "Statistical Inference & Hypothesis Testing" },
+        { title: "Regression & Time-Series Analysis" },
+        { title: "Linear Algebra for Risk Modeling" },
+        { title: "Numerical Techniques in Risk" },
+        { title: "Data Interpretation for Risk Modeling" }
+      ]
+    },
+    {
+      title: "FRM Part 1: Financial Markets & Products",
+      lecturesCount: 4,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Understanding Bonds & Interest Rate Instruments" },
+        { title: "Derivatives: Futures, Options, Swaps" },
+        { title: "Structured Finance Products" },
+        { title: "Market Functioning & Trading Instruments" }
+      ]
+    },
+    {
+      title: "FRM Part 1: Valuation & Risk Models",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Valuation Techniques for Derivatives" },
+        { title: "Risk Metrics: VaR, CVaR, and Stress Testing" },
+        { title: "Portfolio Risk Measurement" },
+        { title: "Monte Carlo Simulation" },
+        { title: "Backtesting & Model Validation" }
+      ]
+    },
+    {
+      title: "FRM Part 2: Market & Credit Risk",
+      lecturesCount: 7,
+      duration: "1 Month",
+      chapters: [
+        { title: "Market Risk Management Tools" },
+        { title: "Volatility & Correlation Models" },
+        { title: "Credit Risk Measurement Techniques" },
+        { title: "Default Risk & Credit Derivatives" },
+        { title: "Credit VaR & Credit Migration" },
+        { title: "Portfolio Credit Risk Modeling" },
+        { title: "Risk-Adjusted Performance Measures" }
+      ]
+    },
+    {
+      title: "FRM Part 2: Operational & Liquidity Risk",
+      lecturesCount: 4,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Identifying Operational Risk Events" },
+        { title: "Liquidity Risk Measurement & Stress Testing" },
+        { title: "Risk Mitigation Strategies" },
+        { title: "Scenario Analysis & Contingency Planning" }
+      ]
+    },
+    {
+      title: "FRM Part 2: Risk Management & Investment",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Alternative Investments: Hedge Funds, PE" },
+        { title: "Structured Credit & Asset Securitization" },
+        { title: "Portfolio Management in Risk Context" },
+        { title: "Behavioral Aspects of Risk Decision Making" },
+        { title: "Portfolio Diversification & Risk Premiums" }
+      ]
+    },
+    {
+      title: "FRM Part 2: Regulatory & Compliance Risk",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Basel III & Financial Regulations" },
+        { title: "Compliance Risk & Fraud Prevention" },
+        { title: "Stress Testing & Risk Reporting" },
+        { title: "Global Risk Trends & Emerging Threats" }
+      ]
+    },
+    {
+      title: "FRM Certification Preparation",
+      lecturesCount: 6,
+      duration: "1 Month",
+      chapters: [
+        { title: "FRM Part 1 & Part 2 Mock Exams" },
+        { title: "Problem-Solving & Case Practice Sessions" },
+        { title: "Exam Strategy, Time Management & Tips" },
+        { title: "Common Mistakes & Pitfall Avoidance" },
+        { title: "Final Revision Strategies" },
+        { title: "Career Support: Resume, Interviews, LinkedIn" }
+      ]
+    }
+  ]
+},
+{
+  id: "chartered-alternative-investment-analyst-caia",
+  title: "Chartered Alternative Investment Analyst (CAIA): Specializing in Alternative Investments",
+  category: "Finance",
+  image: caiaCourseImage,
+  duration: "6–7 Months",
+  description:
+    "Become an expert in alternative investments with the CAIA certification. This course covers hedge funds, private equity, real assets, portfolio management, and due diligence, preparing you for success in global finance.",
+  whatYouWillLearn: [
+    "Understand the fundamentals and advanced concepts of alternative investments",
+    "Gain deep knowledge of hedge funds, private equity, commodities, and real estate",
+    "Analyze portfolio risk, performance attribution, and valuation techniques",
+    "Master due diligence practices and ethical standards in alternative investing",
+    "Learn about digital assets, tokenization, and modern investment vehicles",
+    "Prepare thoroughly for CAIA Level 1 and Level 2 certification exams"
+  ],
+  includes: [
+    { label: "CAIA Level 1 & 2 Coverage", icon: "book" },
+    { label: "Alternative Asset Strategies & Tools", icon: "app-window" },
+    { label: "Case Studies & Valuation Models", icon: "file" },
+    { label: "Certification Prep (CAIA Association)", icon: "certificate" },
+    { label: "Career Support & Mentorship", icon: "settings" }
+  ],
+  modules: [
+    {
+      title: "CAIA Level 1: Fundamentals of Alternative Investments",
+      lecturesCount: 4,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Introduction to Alternative Investment Classes" },
+        { title: "Risk-Return Characteristics of Alternatives" },
+        { title: "Investment Structures and Legal Considerations" },
+        { title: "Trends and Role in Portfolio Allocation" }
+      ]
+    },
+    {
+      title: "Hedge Funds & Trading Strategies",
+      lecturesCount: 6,
+      duration: "1 Month",
+      chapters: [
+        { title: "Types of Hedge Fund Strategies" },
+        { title: "Event-Driven and Macro Approaches" },
+        { title: "Long/Short Equity, Arbitrage & CTA Strategies" },
+        { title: "Hedge Fund Due Diligence" },
+        { title: "Quantitative Methods in Hedge Funds" },
+        { title: "Performance Metrics & Risk Controls" }
+      ]
+    },
+    {
+      title: "Private Equity & Venture Capital",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "PE Investment Process & Deal Lifecycle" },
+        { title: "Venture Capital Strategy & Startup Valuation" },
+        { title: "Buyouts, Exits & Growth Strategies" },
+        { title: "Fund Structures and Governance" },
+        { title: "PE Performance Measurement" }
+      ]
+    },
+    {
+      title: "Real Assets: Real Estate & Infrastructure",
+      lecturesCount: 3,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Commercial Real Estate Investments & REITs" },
+        { title: "Valuation Approaches for Real Assets" },
+        { title: "Infrastructure Projects and Public-Private Models" }
+      ]
+    },
+    {
+      title: "Commodities & Digital Assets",
+      lecturesCount: 6,
+      duration: "1 Month",
+      chapters: [
+        { title: "Commodity Markets: Oil, Gold & Agriculture" },
+        { title: "Derivatives in Commodity Trading" },
+        { title: "Cryptocurrencies: Bitcoin, Ethereum & Beyond" },
+        { title: "Blockchain Technology & Tokenization" },
+        { title: "Digital Asset Valuation & Custody" },
+        { title: "Risks & Regulatory Landscape in Digital Finance" }
+      ]
+    },
+    {
+      title: "Valuation, Risk Management & Performance Attribution",
+      lecturesCount: 4,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Alternative Asset Valuation Models" },
+        { title: "Measuring & Managing Portfolio Risk" },
+        { title: "Performance Attribution Techniques" },
+        { title: "Factor-Based Risk Analysis" }
+      ]
+    },
+    {
+      title: "Due Diligence, Ethics & Professional Standards",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Ethical Principles in Alternative Investments" },
+        { title: "Due Diligence Processes for Fund Selection" },
+        { title: "Transparency & Investor Protection" },
+        { title: "Conflicts of Interest & Fair Disclosure" },
+        { title: "Regulatory Expectations & Industry Codes" }
+      ]
+    },
+    {
+      title: "CAIA Level 2: Portfolio Management with Alternatives",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Portfolio Construction Using Alternative Assets" },
+        { title: "Diversification and Return Enhancement" },
+        { title: "Strategic vs Tactical Allocation" },
+        { title: "Case Studies in Multi-Asset Portfolios" }
+      ]
+    },
+    {
+      title: "CAIA Exam Preparation & Case Practice",
+      lecturesCount: 7,
+      duration: "1 Month",
+      chapters: [
+        { title: "CAIA Level 1 & 2 Mock Exams" },
+        { title: "Exam Strategy & Time Management" },
+        { title: "Case Study Problem Solving" },
+        { title: "Formula Sheets & Key Concepts Review" },
+        { title: "Exam-Specific Ethics Review" },
+        { title: "Revision Plan & Test-Taking Tips" },
+        { title: "Career Planning & Interview Coaching" }
+      ]
+    }
+  ]
+},
+{
+  id: "financial-analytics-certification",
+  title: "Financial Analytics Certification: Data-Driven Decision-Making for Modern Finance",
+  category: "Finance",
+  image: financialAnalyticsImage,
+  duration: "4–6 Months",
+  description:
+    "Master financial data analysis, predictive modeling, and risk analytics using tools like Excel, Python, R, and Tableau. This course equips finance professionals to drive business impact through data-driven strategies.",
+  whatYouWillLearn: [
+    "Analyze and visualize financial data using modern analytics tools",
+    "Apply predictive modeling to forecast trends and guide decisions",
+    "Conduct credit risk modeling and fraud detection using AI and ML",
+    "Optimize investment strategies and portfolio performance",
+    "Interpret corporate financial statements and projections",
+    "Automate trading and comply with financial regulations and ethics"
+  ],
+  includes: [
+    { label: "Hands-On Tool Training (Excel, Python, Tableau)", icon: "app-window" },
+    { label: "Live Projects & Case Studies", icon: "code" },
+    { label: "Machine Learning for Finance", icon: "brain" },
+    { label: "Certification of Completion", icon: "certificate" },
+    { label: "Career Guidance & Mentoring", icon: "settings" }
+  ],
+  modules: [
+    {
+      title: "Introduction to Financial Analytics",
+      lecturesCount: 3,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Understanding Financial Data & Metrics" },
+        { title: "Basics of Descriptive Statistics & Visualization" },
+        { title: "Overview of Tools: Excel, Python, R, Tableau" }
+      ]
+    },
+    {
+      title: "Data Analysis & Visualization Tools",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Data Cleaning & Preparation in Excel & Python" },
+        { title: "Interactive Dashboards in Tableau" },
+        { title: "Visualizing Financial KPIs & Time Series" },
+        { title: "Working with APIs for Financial Data" },
+        { title: "Practical Case: Revenue & Cost Analysis" }
+      ]
+    },
+    {
+      title: "Predictive Modeling for Finance",
+      lecturesCount: 6,
+      duration: "1 Month",
+      chapters: [
+        { title: "Regression & Time Series Forecasting" },
+        { title: "Building Predictive Models in Python & R" },
+        { title: "Model Validation & Performance Metrics" },
+        { title: "Predicting Stock Prices & Financial Trends" },
+        { title: "Scenario Analysis & Stress Testing" },
+        { title: "Hands-on Project: Trend Forecasting" }
+      ]
+    },
+    {
+      title: "Risk Analytics & Fraud Detection",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Introduction to Financial Risk Types" },
+        { title: "Credit Risk Modeling Techniques" },
+        { title: "Fraud Detection Using Machine Learning" },
+        { title: "Case Study: Bank Loan Default Prediction" }
+      ]
+    },
+    {
+      title: "Investment & Portfolio Analytics",
+      lecturesCount: 7,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Portfolio Theory & Asset Allocation" },
+        { title: "Sharpe Ratio, Beta, and Performance Measures" },
+        { title: "Backtesting Investment Strategies" },
+        { title: "ETF & Mutual Fund Analytics" },
+        { title: "Machine Learning in Portfolio Optimization" },
+        { title: "Project: Portfolio Risk-Return Analysis" },
+        { title: "Using Python for Strategy Simulation" }
+      ]
+    },
+    {
+      title: "Corporate Finance & Forecasting",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Budgeting & Forecasting Techniques" },
+        { title: "Financial Statement Analysis" },
+        { title: "Valuation Methods & DCF Models" },
+        { title: "Cash Flow & Scenario Forecasting" }
+      ]
+    },
+    {
+      title: "Big Data & AI in Finance",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Introduction to Big Data & Cloud Tools" },
+        { title: "AI in Financial Predictions & Anomaly Detection" },
+        { title: "Data Pipelines for Financial Systems" },
+        { title: "Real-Time Analytics Use Cases" },
+        { title: "Hands-on Demo: Financial Data in BigQuery" }
+      ]
+    },
+    {
+      title: "Algorithmic Trading & Automation",
+      lecturesCount: 6,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Trading Algorithms & Strategies Overview" },
+        { title: "Using Python for Backtesting" },
+        { title: "Risk Controls & Trade Execution" },
+        { title: "Machine Learning for Signal Generation" },
+        { title: "Project: Build a Basic Trading Bot" },
+        { title: "Integrating APIs & Broker Platforms" }
+      ]
+    },
+    {
+      title: "Financial Ethics & Compliance",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Ethical Principles in Financial Analytics" },
+        { title: "Data Privacy & Security in Financial Systems" },
+        { title: "Regulatory Standards & Risk Disclosure" }
+      ]
+    },
+    {
+      title: "Capstone Project & Certification Preparation",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "End-to-End Analytics Project (Choose Domain)" },
+        { title: "Model Documentation & Business Insights" },
+        { title: "Presentation to Finance Experts" },
+        { title: "Certification Readiness & Final Assessment" },
+        { title: "Career Planning & Industry Interview Prep" }
+      ]
+    }
+  ]
+},
+{
+  id: "ifrs-certification",
+  title: "IFRS Certification: Mastering International Financial Reporting Standards",
+  category: "Finance",
+  image: ifrsCertificationImage,
+  duration: "3–6 Months",
+  description:
+    "Gain globally recognized expertise in International Financial Reporting Standards (IFRS) and learn how to prepare compliant financial statements, understand key differences with Indian GAAP, and navigate core IFRS principles relevant to multinational and regulatory environments.",
+  whatYouWillLearn: [
+    "Understand the IFRS framework and global accounting standards",
+    "Prepare financial statements in compliance with IFRS",
+    "Identify key differences between IFRS and Indian GAAP",
+    "Apply IFRS standards like IFRS 15, 16, and 9 in real-world reporting",
+    "Handle consolidated financial reports under IFRS 10 & 12",
+    "Implement simplified IFRS for SMEs in practical scenarios"
+  ],
+  includes: [
+    { label: "Live + Self-Paced Content", icon: "video" },
+    { label: "Case-Based IFRS Applications", icon: "app-window" },
+    { label: "GAAP vs IFRS Comparative Training", icon: "layers" },
+    { label: "Certification & Assessment Support", icon: "certificate" },
+    { label: "Expert Sessions & Mentorship", icon: "settings" }
+  ],
+  modules: [
+    {
+      title: "Introduction to IFRS Framework",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Overview of IFRS and Global Reporting Need" },
+        { title: "History and Evolution of IFRS" },
+        { title: "Key Principles and Framework Elements" },
+        { title: "Application in Global Business Environments" }
+      ]
+    },
+    {
+      title: "IFRS vs Indian GAAP",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Overview of Indian GAAP" },
+        { title: "Major Differences in Recognition & Measurement" },
+        { title: "Impact on Financial Statements" },
+        { title: "Reconciliation Techniques for Reporting" },
+        { title: "Case Study: Transition from GAAP to IFRS" },
+        { title: "Disclosures & Compliance" }
+      ]
+    },
+    {
+      title: "Financial Statement Preparation under IFRS",
+      lecturesCount: 5,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "IFRS-Compliant Balance Sheet Format" },
+        { title: "Income Statement & Statement of Comprehensive Income" },
+        { title: "Cash Flow Statement under IFRS" },
+        { title: "Statement of Changes in Equity" },
+        { title: "Notes to Financial Statements" }
+      ]
+    },
+    {
+      title: "Revenue Recognition (IFRS 15)",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Five-Step Revenue Recognition Model" },
+        { title: "Application Scenarios & Examples" },
+        { title: "Disclosures & Transitional Considerations" }
+      ]
+    },
+    {
+      title: "Lease Accounting (IFRS 16)",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Identifying Lease Agreements" },
+        { title: "Lessee vs Lessor Accounting Treatments" },
+        { title: "Right-of-Use Asset & Lease Liability" },
+        { title: "Measurement & Reassessment" }
+      ]
+    },
+    {
+      title: "Financial Instruments (IFRS 9)",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Classification & Measurement of Financial Assets" },
+        { title: "Impairment Model (ECL Approach)" },
+        { title: "Hedge Accounting Basics" },
+        { title: "Recognition and Derecognition Rules" },
+        { title: "Disclosures under IFRS 9" },
+        { title: "Risk Management with Financial Instruments" }
+      ]
+    },
+    {
+      title: "Consolidation & Group Reporting (IFRS 10 & 12)",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Control, Subsidiaries, and Group Structures" },
+        { title: "Consolidated Financial Statements" },
+        { title: "Equity Method for Associates & Joint Ventures" },
+        { title: "Non-controlling Interests & Intra-group Transactions" },
+        { title: "Disclosure Requirements (IFRS 12)" }
+      ]
+    },
+    {
+      title: "IFRS for SMEs",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Introduction to IFRS for SMEs" },
+        { title: "Key Simplifications & Eligibility" },
+        { title: "Practical Examples & Application" }
+      ]
+    },
+    {
+      title: "Capstone Project & Certification Prep",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "IFRS Application Project (Real-World Case)" },
+        { title: "Mock Assessments & Feedback" },
+        { title: "Final Evaluation & Review" },
+        { title: "Certification Guidance & Career Mapping" }
+      ]
+    }
+  ]
+},
+{
+  id: "financial-modeling-valuation",
+  title: "Financial Modeling and Valuation: Mastering Excel, DCF, and Investment Analysis",
+  category: "Finance",
+  image: financialModelingImage,
+  duration: "3–6 Months",
+  description:
+    "Develop in-demand skills in financial modeling, business valuation, and investment analysis using Excel, DCF methods, and M&A strategies. This course is ideal for finance professionals and students aiming to build real-world forecasting and decision-making expertise.",
+  whatYouWillLearn: [
+    "Build structured financial models from scratch using Excel",
+    "Apply valuation methods like DCF, comparables, and precedent transactions",
+    "Analyze company performance using financial statements and ratios",
+    "Create M&A and LBO models for investment decision-making",
+    "Forecast revenues, costs, and financial outcomes under various scenarios",
+    "Prepare professional reports and investor presentations"
+  ],
+  includes: [
+    { label: "Excel-Based Case Studies", icon: "app-window" },
+    { label: "Valuation Templates & Frameworks", icon: "layers" },
+    { label: "Live Sessions + Practice Projects", icon: "video" },
+    { label: "Certification & Resume-Ready Portfolio", icon: "certificate" },
+    { label: "Placement Guidance & Career Support", icon: "settings" }
+  ],
+  modules: [
+    {
+      title: "Introduction to Financial Modeling",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Role of Financial Modeling in Finance" },
+        { title: "Structuring a Financial Model" },
+        { title: "Best Practices & Formatting in Excel" }
+      ]
+    },
+    {
+      title: "Excel-Based Modeling Techniques",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Dynamic Formulas & Financial Functions" },
+        { title: "Building Schedules: Depreciation, Working Capital" },
+        { title: "Linking Financial Statements" },
+        { title: "Scenario & Sensitivity Modeling in Excel" },
+        { title: "Cohort & Waterfall Analysis Techniques" },
+        { title: "Model Auditing and Review" }
+      ]
+    },
+    {
+      title: "Financial Statement Analysis",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Analyzing Balance Sheets & Income Statements" },
+        { title: "Cash Flow Statement Review" },
+        { title: "Financial Ratios & Trend Analysis" },
+        { title: "Common Size Statements & Comparisons" }
+      ]
+    },
+    {
+      title: "Forecasting & Budgeting",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Revenue Forecasting Techniques" },
+        { title: "Cost Estimation Models" },
+        { title: "Budget vs Actual Analysis" },
+        { title: "Driver-Based Forecasting" },
+        { title: "Top-Down vs Bottom-Up Budgeting" }
+      ]
+    },
+    {
+      title: "Valuation Techniques & Applications",
+      lecturesCount: 7,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Discounted Cash Flow (DCF) Method" },
+        { title: "Terminal Value & WACC Calculation" },
+        { title: "Comparable Company Analysis (Comps)" },
+        { title: "Precedent Transaction Method" },
+        { title: "Relative Valuation Multiples" },
+        { title: "Valuation Adjustments & Assumptions" },
+        { title: "Valuation Presentation & Storytelling" }
+      ]
+    },
+    {
+      title: "M&A and LBO Modeling",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Introduction to Mergers & Acquisitions" },
+        { title: "Deal Structuring & Synergy Analysis" },
+        { title: "LBO Modeling Fundamentals" },
+        { title: "Debt Modeling & Exit Analysis" }
+      ]
+    },
+    {
+      title: "Capital Structure & Cost of Capital",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Debt vs Equity Analysis" },
+        { title: "Calculating Cost of Capital (WACC)" },
+        { title: "Optimal Capital Structure Considerations" }
+      ]
+    },
+    {
+      title: "Reporting & Investment Presentations",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Structuring a Financial Report" },
+        { title: "Key Metrics to Present" },
+        { title: "Visualizing Financials for Stakeholders" },
+        { title: "Investor Decks & Presentation Skills" }
+      ]
+    },
+    {
+      title: "Capstone Project & Certification Prep",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Capstone: Build a Full Financial Model" },
+        { title: "Company Valuation Project" },
+        { title: "Mock Interviews & Case Study Discussion" },
+        { title: "Portfolio Development & Review" },
+        { title: "Exam & Certification Readiness" }
+      ]
+    }
+  ]
+},
+{
+  id: "financial-planning-wealth-management",
+  title: "Financial Planning and Wealth Management: Strategies for Personal and HNI Growth",
+  category: "Finance",
+  image: financialPlanningImage,
+  duration: "3–6 Months",
+  description:
+    "This comprehensive course equips financial professionals and individuals with practical knowledge in personal finance, investment strategies, tax planning, and HNI portfolio management. Ideal for wealth advisors, investment planners, and anyone looking to grow and preserve wealth effectively.",
+  whatYouWillLearn: [
+    "Create effective personal and HNI financial plans",
+    "Apply investment strategies across asset classes for wealth growth",
+    "Plan for retirement, taxes, and estate transfer efficiently",
+    "Understand insurance, risk mitigation, and regulatory practices",
+    "Advise clients on mutual funds, equities, and tax-saving instruments",
+    "Build ethical and compliant financial advisory practices"
+  ],
+  includes: [
+    { label: "Live Case Studies & Simulations", icon: "app-window" },
+    { label: "Tax & Retirement Planning Tools", icon: "layers" },
+    { label: "Investment Portfolio Exercises", icon: "bar-chart-4" },
+    { label: "Certification & Career Coaching", icon: "certificate" },
+    { label: "HNI Advisory Practice Projects", icon: "user-circle-2" }
+  ],
+  modules: [
+    {
+      title: "Introduction to Financial Planning",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Role of Financial Planning in Wealth Management" },
+        { title: "Understanding Client Needs and Objectives" },
+        { title: "Basic Concepts: Budgeting, Saving, Net Worth" },
+        { title: "Financial Planning Lifecycle" }
+      ]
+    },
+    {
+      title: "Investment Strategies & Portfolio Management",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Asset Allocation and Diversification" },
+        { title: "Risk and Return Analysis" },
+        { title: "Equity, Debt, and Alternative Investments" },
+        { title: "Portfolio Construction Techniques" },
+        { title: "Monitoring & Rebalancing Portfolios" },
+        { title: "Investment Psychology and Client Behavior" }
+      ]
+    },
+    {
+      title: "Retirement & Tax Planning",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Retirement Goals and Pension Planning" },
+        { title: "Insurance for Retirement Security" },
+        { title: "Tax-Saving Investment Strategies" },
+        { title: "Income Tax Computation & Planning" },
+        { title: "Post-Retirement Wealth Management" }
+      ]
+    },
+    {
+      title: "Wealth Advisory for HNIs",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Understanding HNI Financial Needs" },
+        { title: "Customized Portfolio Strategies" },
+        { title: "Family Office Services & Private Banking" }
+      ]
+    },
+    {
+      title: "Stock Market & Mutual Fund Advisory",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Basics of Equity, Bonds & Derivatives" },
+        { title: "Mutual Fund Selection & Comparison" },
+        { title: "SIP, ELSS, and Index Fund Strategies" },
+        { title: "Evaluating Market Trends and Reports" },
+        { title: "Investor Risk Profiling for Equity Exposure" },
+        { title: "Advisory Approaches for Retail Clients" }
+      ]
+    },
+    {
+      title: "Risk Management in Financial Planning",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Types of Financial Risk" },
+        { title: "Insurance Planning: Life, Health, Property" },
+        { title: "Hedging Strategies and Risk Tools" },
+        { title: "Building Resilient Wealth Plans" }
+      ]
+    },
+    {
+      title: "Estate & Succession Planning",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Creating Wills and Trusts" },
+        { title: "Wealth Transfer Strategies" },
+        { title: "Succession Planning for Businesses" }
+      ]
+    },
+    {
+      title: "Ethics & Compliance in Advisory",
+      lecturesCount: 5,
+      duration: "1 Week",
+      chapters: [
+        { title: "Code of Conduct for Financial Advisors" },
+        { title: "Regulatory Framework (SEBI, RBI, IRDAI)" },
+        { title: "Anti-Money Laundering (AML) Compliance" },
+        { title: "Client Confidentiality & Transparency" },
+        { title: "Conflict of Interest Management" }
+      ]
+    },
+    {
+      title: "Capstone: Personal Finance Planning",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Designing a Comprehensive Financial Plan" },
+        { title: "Client Simulation: HNI Portfolio Case" },
+        { title: "Financial Plan Presentation & Review" },
+        { title: "Exam & Certification Prep" }
+      ]
+    }
+  ]
+},
+{
+  id: "investment-banking-certification",
+  title: "Investment Banking Certification Course: M&A, Valuation, and Capital Markets",
+  category: "Finance",
+  image: investmentBankingImage,
+  duration: "3–6 Months",
+  description:
+    "Designed for aspiring investment bankers, this course equips you with in-depth knowledge in mergers and acquisitions, capital markets, financial modeling, and deal structuring. Ideal for careers in corporate finance, equity research, and financial advisory.",
+  whatYouWillLearn: [
+    "Understand the structure and functions of investment banks",
+    "Build and analyze financial models using Excel",
+    "Apply valuation methods like DCF, LBO, and comparables",
+    "Prepare investor presentations and pitch books",
+    "Navigate M&A processes and post-deal integration",
+    "Comprehend capital markets and fundraising strategies"
+  ],
+  includes: [
+    { label: "Real M&A Deal Simulations", icon: "files" },
+    { label: "Excel-Based Financial Modeling", icon: "table" },
+    { label: "Valuation Case Studies", icon: "bar-chart-3" },
+    { label: "Pitchbook Development Practice", icon: "notebook-pen" },
+    { label: "Certification & Industry Insights", icon: "certificate" }
+  ],
+  modules: [
+    {
+      title: "Investment Banking Overview",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Role and Structure of Investment Banks" },
+        { title: "Core Services: M&A, IPOs, and Advisory" },
+        { title: "Career Paths and Job Roles" },
+        { title: "Recent Trends in Investment Banking" }
+      ]
+    },
+    {
+      title: "M&A and Deal Structuring",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Types of Mergers and Acquisition Strategies" },
+        { title: "Deal Lifecycle and Due Diligence" },
+        { title: "Post-Merger Integration" },
+        { title: "Synergies and Transaction Multiples" },
+        { title: "Negotiation & Regulatory Considerations" },
+        { title: "Case Study: Real-World M&A Deal" }
+      ]
+    },
+    {
+      title: "Financial Modeling Essentials",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Excel Techniques for Analysts" },
+        { title: "3-Statement Model Building" },
+        { title: "Forecasting and Assumptions" },
+        { title: "Linking Financial Statements" },
+        { title: "Scenario & Sensitivity Analysis" }
+      ]
+    },
+    {
+      title: "Valuation Techniques",
+      lecturesCount: 7,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Discounted Cash Flow (DCF) Method" },
+        { title: "Relative Valuation: Comparables" },
+        { title: "LBO Modeling Basics" },
+        { title: "Enterprise vs. Equity Value" },
+        { title: "Valuation Multiples and Market Data" },
+        { title: "Terminal Value & WACC" },
+        { title: "Valuation Project: Company Analysis" }
+      ]
+    },
+    {
+      title: "Pitchbooks & Presentations",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Structure of Investment Banking Pitchbooks" },
+        { title: "Building a Winning Deal Pitch" },
+        { title: "Presentation Best Practices" }
+      ]
+    },
+    {
+      title: "Equity & Debt Capital Markets",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Raising Capital Through IPOs & FPOs" },
+        { title: "Debt Issuances: Bonds and Notes" },
+        { title: "Syndication Process and Book Building" },
+        { title: "Private Placements and Structured Finance" },
+        { title: "Role of Underwriters and Rating Agencies" },
+        { title: "Recent ECM & DCM Transactions" }
+      ]
+    },
+    {
+      title: "Private Equity & Venture Capital",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Investment Lifecycle in PE & VC" },
+        { title: "Term Sheets & Capital Structure" },
+        { title: "Exit Strategies and IRR Analysis" },
+        { title: "Startup Valuation Techniques" }
+      ]
+    },
+    {
+      title: "Regulations & Compliance",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "SEBI, RBI, and Global Compliance Standards" },
+        { title: "Insider Trading and Ethical Practices" },
+        { title: "Anti-Money Laundering (AML) Laws" }
+      ]
+    },
+    {
+      title: "Capstone Project: End-to-End Deal Execution",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Selecting a Target Company" },
+        { title: "Building Financial & Valuation Models" },
+        { title: "Structuring the Deal and Presentation" },
+        { title: "Final Assessment and Certification" }
+      ]
+    }
+  ]
+},
+{
+  id: "business-accounting-taxation",
+  title: "Business Accounting and Taxation (BAT) Certification",
+  category: "Finance",
+  image: batCourseImage,
+  duration: "3–6 Months",
+  description:
+    "The Business Accounting and Taxation (BAT) Course provides practical skills in financial accounting, taxation, and compliance using Tally, Excel, and GST systems. Ideal for those seeking a career in accounting, finance, or auditing across industries and SMEs.",
+  whatYouWillLearn: [
+    "Understand accounting principles and prepare financial statements",
+    "Manage direct and indirect taxes including GST and Income Tax",
+    "Gain hands-on skills using Tally and Excel for accounting tasks",
+    "Handle payroll, TDS, and salary management",
+    "Ensure legal compliance and reporting for businesses",
+    "Perform internal audits and risk assessments"
+  ],
+  includes: [
+    { label: "Hands-on Tally & Excel Training", icon: "layout-grid" },
+    { label: "GST Filing & Compliance", icon: "file-bar-chart" },
+    { label: "Income Tax Return (ITR) Filing", icon: "file-text" },
+    { label: "Payroll Management Practice", icon: "users" },
+    { label: "Final Project & Certification", icon: "award" }
+  ],
+  modules: [
+    {
+      title: "Accounting & Financial Statements",
+      lecturesCount: 6,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Introduction to Accounting Principles" },
+        { title: "Journal Entries & Ledger Posting" },
+        { title: "Trial Balance and Adjustments" },
+        { title: "Profit & Loss Account Preparation" },
+        { title: "Balance Sheet Structuring" },
+        { title: "Cash Flow Statement Preparation" }
+      ]
+    },
+    {
+      title: "Direct & Indirect Taxation",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Income Tax Fundamentals" },
+        { title: "Corporate Tax Calculations" },
+        { title: "Tax Deducted at Source (TDS)" },
+        { title: "Overview of Indirect Taxes" },
+        { title: "Introduction to GST & Compliance" }
+      ]
+    },
+    {
+      title: "Tally & Excel for Business Accounting",
+      lecturesCount: 7,
+      duration: "3 Weeks",
+      chapters: [
+        { title: "Tally Interface & Features" },
+        { title: "Creating Company and Ledgers" },
+        { title: "Voucher Entry and GST in Tally" },
+        { title: "Generating Financial Reports" },
+        { title: "Excel Formulas for Accounting" },
+        { title: "Creating Dynamic MIS Reports" },
+        { title: "Excel Dashboards for Analysis" }
+      ]
+    },
+    {
+      title: "Payroll & Salary Management",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Payroll Structure & Components" },
+        { title: "TDS on Salaries" },
+        { title: "Salary Slip Generation and Compliance" }
+      ]
+    },
+    {
+      title: "GST Framework & Filing",
+      lecturesCount: 4,
+      duration: "1.5 Weeks",
+      chapters: [
+        { title: "GST Registration & Rules" },
+        { title: "Creating GST Invoices" },
+        { title: "Filing GST Returns (GSTR-1, GSTR-3B)" },
+        { title: "Input Tax Credit (ITC) & Reconciliation" }
+      ]
+    },
+    {
+      title: "Financial Reporting & MIS",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Types of MIS Reports" },
+        { title: "Analyzing Business Performance" },
+        { title: "Cost vs. Revenue Trends" },
+        { title: "Budgeting & Forecasting Techniques" },
+        { title: "Reporting Tools in Excel & Tally" }
+      ]
+    },
+    {
+      title: "Business Law & Compliance",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Overview of Indian Business Law" },
+        { title: "Legal Requirements for Companies" },
+        { title: "Company Act & Tax Laws Compliance" },
+        { title: "Ethical Accounting Practices" }
+      ]
+    },
+    {
+      title: "Audit & Risk Management",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "Internal vs. External Audit" },
+        { title: "Risk Identification & Assessment" },
+        { title: "Audit Report Preparation" }
+      ]
+    },
+    {
+      title: "Capstone Project: Accounting for a Real Business",
+      lecturesCount: 4,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Setup and Record Transactions in Tally" },
+        { title: "Tax Calculation and Report Generation" },
+        { title: "Create MIS Reports and Compliance Documents" },
+        { title: "Presentation and Certification Evaluation" }
+      ]
+    }
+  ]
+},
+{
+  id: "gst-certification-course",
+  title: "GST Certification Course",
+  category: "Finance",
+  image: gstCourseImage,
+  duration: "2–4 Months",
+  description:
+    "The GST Certification Course equips learners with expert knowledge of Goods and Services Tax laws, compliance processes, return filing, ITC claims, and audits. It is ideal for accountants, business owners, tax professionals, and finance students handling indirect taxation in India.",
+  whatYouWillLearn: [
+    "Understand the GST structure, tax slabs, and compliance requirements",
+    "Register businesses under GST and generate proper invoices",
+    "File monthly and annual GST returns (GSTR-1, GSTR-3B, GSTR-9)",
+    "Claim Input Tax Credit and reconcile mismatches",
+    "Conduct GST audits and respond to assessments and notices",
+    "Use GST software tools for return filing and compliance"
+  ],
+  includes: [
+    { label: "GST Return Filing Practice", icon: "file-text" },
+    { label: "Hands-on GST Software Training", icon: "terminal" },
+    { label: "Input Tax Credit (ITC) Calculations", icon: "calculator" },
+    { label: "E-Way Bill and Invoicing", icon: "file-check-2" },
+    { label: "Final Certification", icon: "award" }
+  ],
+  modules: [
+    {
+      title: "GST Framework & Compliance",
+      lecturesCount: 5,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Introduction to GST & Structure" },
+        { title: "GST Registration: Process & Eligibility" },
+        { title: "Types of GST: CGST, SGST, IGST, UTGST" },
+        { title: "Tax Rates and Slabs" },
+        { title: "Compliance Rules and Penalties" }
+      ]
+    },
+    {
+      title: "GST Registration & Documentation",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "Eligibility & Required Documents" },
+        { title: "GST Portal Walkthrough" },
+        { title: "Online Registration Process" },
+        { title: "Common Errors and Fixes" }
+      ]
+    },
+    {
+      title: "Invoicing & E-Way Bill System",
+      lecturesCount: 6,
+      duration: "1.5 Weeks",
+      chapters: [
+        { title: "Tax Invoice vs. Bill of Supply" },
+        { title: "GST Invoice Format and Rules" },
+        { title: "E-Way Bill Generation & Applicability" },
+        { title: "Inter-State Transactions" },
+        { title: "Returns Linked to Invoicing" },
+        { title: "Avoiding Penalties in Billing" }
+      ]
+    },
+    {
+      title: "Input Tax Credit (ITC) & Reconciliation",
+      lecturesCount: 4,
+      duration: "1 Week",
+      chapters: [
+        { title: "ITC Eligibility Rules" },
+        { title: "Matching Invoices & Claiming Credit" },
+        { title: "Reversals & Reconciliation Process" },
+        { title: "ITC Mismatch: Causes & Rectifications" }
+      ]
+    },
+    {
+      title: "GST Return Filing",
+      lecturesCount: 7,
+      duration: "2 Weeks",
+      chapters: [
+        { title: "Overview of GST Returns" },
+        { title: "GSTR-1: Outward Supplies Filing" },
+        { title: "GSTR-3B: Summary Return Filing" },
+        { title: "GSTR-9: Annual Return Basics" },
+        { title: "Late Fees and Interest Calculations" },
+        { title: "Correcting Filed Returns" },
+        { title: "Due Dates and Common Mistakes" }
+      ]
+    },
+    {
+      title: "GST Audit & Assessment",
+      lecturesCount: 3,
+      duration: "1 Week",
+      chapters: [
+        { title: "GST Audit Process & Thresholds" },
+        { title: "Responding to Notices" },
+        { title: "Tax Refunds & Adjustments" }
+      ]
+    },
+    {
+      title: "Reverse Charge Mechanism & TDS under GST",
+      lecturesCount: 3,
+      duration: "0.5 Week",
+      chapters: [
+        { title: "Understanding RCM Transactions" },
+        { title: "TDS and TCS under GST" },
+        { title: "Compliances for Special Cases" }
+      ]
+    },
+    {
+      title: "GST Software & Practical Training",
+      lecturesCount: 5,
+      duration: "1.5 Weeks",
+      chapters: [
+        { title: "Using GSTN Portal Effectively" },
+        { title: "Return Filing in TallyPrime & Zoho Books" },
+        { title: "Reconciling GSTR-2A & 2B" },
+        { title: "Generating Reports from Software" },
+        { title: "Case Study: Filing for a Small Business" }
+      ]
+    }
+  ]
+},
+{
+  id: "certified-management-accountant-cma",
+  title: "Certified Management Accountant (CMA)",
+  category: "Finance",
+  image: cmaCourseImage,
+  duration: "12–18 Months",
+  description:
+    "The Certified Management Accountant (CMA) certification by the IMA is a globally respected credential for finance and accounting professionals. It focuses on financial planning, performance management, cost control, decision analysis, and strategic financial leadership, making it ideal for those aiming for high-level finance roles.",
+  whatYouWillLearn: [
+    "Master financial planning, budgeting, and forecasting techniques",
+    "Analyze financial performance and manage costs effectively",
+    "Evaluate investment decisions and corporate finance strategies",
+    "Apply decision-making tools in business scenarios",
+    "Understand ethical standards and corporate governance",
+    "Use data analytics and technology in financial management"
+  ], 
+  includes: [
+    { label: "Part 1 & 2 CMA Curriculum Coverage", icon: "book" },
+    { label: "Financial Modeling & Case Studies", icon: "bar-chart-3" },
+    { label: "Decision-Making & Ethics Workshops", icon: "check-square" },
+    { label: "Interactive Practice Tests", icon: "file-check-2" },
+    { label: "CMA Exam Guidance & Mentorship", icon: "user-check" }
+  ],
+  modules: [
+    {
+      title: "Part 1: Financial Planning, Performance, and Analytics",
+      lecturesCount: 6,
+      duration: "6–9 Months",
+      chapters: [
+        { title: "External Financial Reporting Decisions" },
+        { title: "Planning, Budgeting, and Forecasting" },
+        { title: "Performance Management & Variance Analysis" },
+        { title: "Cost Management Strategies" },
+        { title: "Internal Controls & Risk Mitigation" },
+        { title: "Technology & Analytics in Finance" }
+      ]
+    },
+    {
+      title: "Part 2: Strategic Financial Management",
+      lecturesCount: 7,
+      duration: "6–9 Months",
+      chapters: [
+        { title: "Financial Statement Analysis & Valuation" },
+        { title: "Corporate Finance Fundamentals" },
+        { title: "Decision Analysis & Pricing Strategies" },
+        { title: "Risk Management & Capital Structure" },
+        { title: "Investment Decisions & Economic Concepts" },
+        { title: "Ethics & Professional Standards" },
+        { title: "Strategic Financial Leadership & Case Applications" }
+      ]
+    },
+    {
+      title: "Financial Tools & Technology",
+      lecturesCount: 4,
+      duration: "1 Month",
+      chapters: [
+        { title: "Excel for Financial Modeling" },
+        { title: "Data Visualization Using Power BI" },
+        { title: "Automation & AI in Finance" },
+        { title: "Using ERP & Accounting Software" }
+      ]
+    },
+    {
+      title: "CMA Practice & Exam Preparation",
+      lecturesCount: 3,
+      duration: "1 Month",
+      chapters: [
+        { title: "Mock Tests for Part 1 & Part 2" },
+        { title: "Question Bank Review & Feedback" },
+        { title: "Exam Strategy & Time Management" }
+      ]
+    },
+    {
+      title: "Professional Development & Ethics",
+      lecturesCount: 5,
+      duration: "1 Month",
+      chapters: [
+        { title: "Corporate Governance & Leadership Skills" },
+        { title: "Professional Ethics in Finance" },
+        { title: "Business Communication for Finance Professionals" },
+        { title: "Career Roadmap After CMA" },
+        { title: "Interview & Resume Preparation for CMA Roles" }
+      ]
+    }
+  ]
+},
 
 ];
