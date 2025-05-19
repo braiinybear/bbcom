@@ -297,7 +297,7 @@ const Home: React.FC = () => {
       </div>
     </div>
   </div>
-</section>
+</section>  
 
       {/* Upcoming Events */}
       <section className="py-16 px-6">
