@@ -1,10 +1,10 @@
 import Hero from '../components/homepage/Hero';
 import { ArrowRight, BookOpen, Users, Lightbulb, Leaf, PawPrint, Sun, Heart, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import childImg from "../assets/impact-story/child.jpg";
-import personImg from "../assets/impact-story/person.jpg"
-import youthImg from "../assets/impact-story/youth.jpg"
-import ruralImg from "../assets/impact-story/rural.jpg"
+// import childImg from "../assets/impact-story/child.jpg";
+// import personImg from "../assets/impact-story/person.jpg"
+// import youthImg from "../assets/impact-story/youth.jpg"
+// import ruralImg from "../assets/impact-story/rural.jpg"
 import img2 from "../assets/images/IMG_3998.JPG"
 
 const Home: React.FC = () => {
@@ -107,32 +107,32 @@ const Home: React.FC = () => {
     },
   ];
 
-  const impactData = [
-    {
-      title: "Children",
-      image: childImg,
-      count: "450047+",
-      underlineColor: "bg-[#2D3E91]",
-    },
-    {
-      title: "Youth",
-      image: youthImg,
-      count: "480203+",
-      underlineColor: "bg-[#4CC5F1]",
-    },
-    {
-      title: "Rural Households",
-      image: ruralImg,
-      count: "778665+",
-      underlineColor: "bg-[#2D3E91]",
-    },
-    {
-      title: "Persons with Disability",
-      image: personImg,
-      count: "44307+",
-      underlineColor: "bg-[#4CC5F1]",
-    },
-  ];
+  // const impactData = [
+  //   {
+  //     title: "Children",
+  //     image: childImg,
+  //     count: "450047+",
+  //     underlineColor: "bg-[#2D3E91]",
+  //   },
+  //   {
+  //     title: "Youth",
+  //     image: youthImg,
+  //     count: "480203+",
+  //     underlineColor: "bg-[#4CC5F1]",
+  //   },
+  //   {
+  //     title: "Rural Households",
+  //     image: ruralImg,
+  //     count: "778665+",
+  //     underlineColor: "bg-[#2D3E91]",
+  //   },
+  //   {
+  //     title: "Persons with Disability",
+  //     image: personImg,
+  //     count: "44307+",
+  //     underlineColor: "bg-[#4CC5F1]",
+  //   },
+  // ];
 
   return (
     <div className="bg-gray-50">
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Our Impact */}
-      <section className="py-16 bg-white text-center">
+      {/* <section className="py-16 bg-white text-center">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Impact</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
@@ -190,7 +190,7 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Work Areas */}
       <section className="py-10 px-6 bg-gray-100">
